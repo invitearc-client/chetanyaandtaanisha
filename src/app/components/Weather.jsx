@@ -1,117 +1,152 @@
 "use client";
 
-const days = [
-  { date: "4 Dec", icon: "☀️", high: 31, low: 15, note: "Sunny & pleasant" },
-  { date: "5 Dec", icon: "🌤️", high: 30, low: 14, note: "Clear skies" },
-];
-
-const requestNames = [
-  "Mona - Raj Kumar Tawri",
-  "Rashmi - Shiv Kumar Tawri",
-  "Neha - Rohan",
-  "and Tawri Family",
-];
-
-const regardsNames = ["Palak - Ankit ji", "Priya - Rakshit ji"];
-
 export default function Weather() {
   return (
     <section
       id="weather"
-      className="w-full scroll-mt-6 px-0 md:px-10 flex flex-col items-center gap-16"
+      className="w-full scroll-mt-6 px-0 md:px-10 flex flex-col items-center gap-16 mt-10"
     >
-      {/* Weather card */}
-      <div
-        className="w-full max-w-4xl
-     md:px-8 py-8"
-      >
-        <h2
-          className="text-[#B35800] font-cormorant-garamond text-center
-            md:text-5xl text-[30px] lg:text-[80px] leading-tight mt-2 font-semibold"
-        >
-          Bikaner Weather
-        </h2>
+      <div className="w-full px-5 py-10 md:px-12 md:py-12 text-center">
+        {/* Weather Heading */}
 
-        <p className="text-center italic text-[#a0575a] font-cormorant-garamond text-base md:text-lg mt-2">
-          December brings sunny days, pleasant afternoons and cool desert
-          evenings.
+        <h2
+          className="text-[#775A19] jacques-francois-regular text-center
+            md:text-5xl text-[26px] lg:text-[60px] leading-tight mt-2"
+        >
+          WEATHER
+        </h2>
+        <div className="w-20 h-[1px] bg-[#B58A42] mx-auto mt-2 mb-4"></div>
+
+        <p className="jacques-francois-regular text-sm md:text-[20px] text-[#775A19] max-w-md mx-auto">
+          January and February brings sunny days, pleasant afternoons and cool
+          desert evenings.
         </p>
 
-        <div className="grid grid-cols-2 md:grid-cols-2 gap-4 mt-8">
-          {days.map((d) => (
+        {/* Weather Cards */}
+
+        <div className="flex flex-wrap justify-center gap-x-6 gap-y-8 max-w-3xl mx-auto mt-8">
+          {[
+            {
+              day: "Tuesday",
+              date: "26",
+              month: "JAN 2027",
+              temp: "31°C",
+              weather: "Sunny & Pleasant",
+              icon: "/assets/weather_icon.png",
+            },
+       
+            {
+              day: "Monday",
+              date: "01",
+              month: "FEB 2027",
+              temp: "31°C",
+              weather: "Sunny & Pleasant",
+              icon: "/assets/weather_icon.png",
+            },
+            {
+              day: "Tuesday",
+              date: "02",
+              month: "FEB 2027",
+              temp: "30°C",
+              weather: "Clear Skies",
+              icon: "/assets/weather_icon2.png",
+            },
+            {
+              day: "Wednesday",
+              date: "03",
+              month: "FEB 2027",
+              temp: "30°C",
+              weather: "Clear Skies",
+              icon: "/assets/weather_icon.png",
+            },
+          ].map((item, index) => (
+         
             <div
-              key={d.date}
-              className="flex flex-col items-center rounded-2xl border border-[#e6d3ae]
-              bg-[#faf5ea] py-3 shadow-[0_12px_24px_rgba(0,0,0,0.08)]"
+              key={index}
+              className="flex flex-col items-center justify-center text-[#775A19] w-[calc(50%-1rem)] md:w-[calc(20%-1.5rem)]"
             >
-              <span className="text-3xl">{d.icon}</span>
+              <p className="text-[10px] md:text-[14px] tracking-[3px]">
+                {item.day}
+              </p>
 
-              <span className="mt-3 text-[11px] tracking-[0.25em] uppercase text-[#a0575a]">
-                {d.date}
-              </span>
+              <h3 className="font-cormorant-garamond text-[30px] md:text-3xl lg:text-4xl mt-1">{item.date}</h3>
 
-              <span className="mt-2 text-3xl text-[#B35800] font-cormorant-garamond">
-                {d.high}°
-              </span>
+              <p className="text-[9px]  md:text-[14px] tracking-[2px]">
+                {item.month}
+              </p>
+              <img src={item.icon} alt="Shree Ganesh" className="w-full py-2" />
 
-              <span className="mt-2 text-xl text-[#a0575a] font-cormorant-garamond">
-                {d.low}°
-              </span>
+              <h3 className="font-cormorant-garamond text-2xl md:text-3xl lg:text-4xl">
+                {item.temp}
+              </h3>
 
-              <span className="mt-3 italic text-sm text-[#a0575a] font-cormorant-garamond">
-                {d.note}
-              </span>
+              <p className="text-[10px] md:text-[14px]  mt-1">{item.weather}</p>
             </div>
           ))}
         </div>
-      </div>
 
-      {/* Special request card */}
-      <div
-        className="w-full max-w-xl rounded-3xl bg-gradient-to-br from-[#8c1212] to-[#5c0505]
-        border border-[#a8641a]/60 px-6 py-10 text-center shadow-[0_20px_50px_rgba(0,0,0,0.25)]"
-      >
-        <p className="text-[11px] tracking-[0.3em] uppercase text-[#d4a63c]">
-          WELCOME BY
-        </p>
+        {/* Bottom Invitation Text */}
+        <div className="mt-24 md:mt-28 max-w-4xl mx-auto text-[#775A19]">
+          <p className="jacques-francois-regular text-sm md:text-base leading-relaxed">
+            As we begin this beautiful new chapter together, it would mean the
+            world to have you by our side. Your presence, love and blessings
+            will make these moments even more special.
+          </p>
 
-        <div className="mt-4 space-y-2">
-          {requestNames.map((name) => (
-            <p
-              key={name}
-              className="text-xl md:text-2xl text-[#f6e6dc] font-serif"
-            >
-              {name}
-            </p>
-          ))}
+          <p className="jacques-francois-regular text-sm md:text-base leading-relaxed mt-3">
+            We look forward to celebrating together, creating memories and
+            sharing the joy of this occasion with all those who mean so much to
+            us.
+          </p>
+
+          <div className="text-2xl mt-3">♥</div>
+
+          <p className="jacques-francois-regular text-sm md:text-2xl mt-3">
+            With love
+          </p>
+
+          <h2 className="parisienne-regular text-2xl md:text-5xl mt-4 font-semibold">
+            Dadke and Nanke
+          </h2>
+
+
+
+
+     <div className="flex flex-col justify-center items-center mt-8">
+          <a
+            href="https://invitearc.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className=" flex items-center"
+          >
+            {" "}
+            <img
+              src="/assets/logon.png"
+              alt="Wedding Logo"
+              className="md:w-17 w-13"
+            />
+          </a>
+
+          <a
+            href="https://www.instagram.com/theinvitearc/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className=" flex items-center gap-3 font-serif text-[16px] md:text-[18px] text-[#775A19] mt-2"
+          >
+            <img
+              src="/assets/insta.png"
+              alt="Instagram"
+              className="object-contain h-4 w-5"
+            />
+
+            <span>Follow us on Instagram</span>
+          </a>
         </div>
 
-        <div className="mx-auto my-6 h-px w-24 bg-[#d4a63c]/50" />
 
-        <p className="text-[11px] tracking-[0.3em] uppercase text-[#d4a63c]">
-          Special Request
-        </p>
 
-        <div className="mt-4 space-y-3">
-          {regardsNames.map((name) => (
-            <p
-              key={name}
-              className="text-xl md:text-2xl text-[#f6e6dc] font-serif"
-            >
-              {name}
-            </p>
-          ))}
+          
         </div>
-        <div className="mx-auto my-6 h-px w-24 bg-[#d4a63c]/50" />
-        <p className="text-[11px] tracking-[0.3em] uppercase text-[#d4a63c]">
-          MATERNAL SIDE
-        </p>
-        <p className="text-xl md:text-2xl text-[#f6e6dc] font-serif mt-3">
-          Shri Narendra Kumar & Shri Pawan Kumar Jhawar
-        </p>
-        <p className="text-xl md:text-2xl text-[#f6e6dc] font-serif mt-3">
-          Vaani tawri-mere chachu ke shadi mae jrur jrur aana….
-        </p>
       </div>
     </section>
   );

@@ -1,228 +1,393 @@
 "use client";
 
 export default function Events() {
-
   return (
-    <div id="itinerary" className="flex scroll-mt-6 flex-col justify-center mt-20 lg:mt-40 items-center">
-        <p className="md:text-2xl text-[16px] text-[#B35800] font-cormorant-garamond">
-       Two days of celebration
-
-
+     
+    <div
+      id="itinerary"
+      className="flex w-full min-w-0 scroll-mt-6 flex-col justify-center mt-20 lg:mt-40 items-center  md:relative md:left-1/2 lg:w-[calc(90vw-3rem)] 3xl:w-[calc(75vw-3rem)] md:max-w-none md:-translate-x-1/2"
+    >
+      <p className="md:text-4xl text-[24px] text-[#F6F0E4] parisienne-regular">
+        On the following events
       </p>
-<h2
-              className="text-[#B35800] font-cormorant-garamond text-center
-            md:text-5xl text-[30px] lg:text-[80px] leading-tight mt-2 font-semibold"
-            >
-             Wedding Events
-            </h2>
 
+      <div className="grid w-full min-w-0 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-12 gap-12 md:gap-8 pt-10 md:px-10">
 
+        {/* Mata ki Chowki */}
+        <div className="relative w-full min-h-119 md:min-h-119 lg:min-h-129 flex flex-col bg-[url('/assets/event_bg.webp')] rounded-2xl px-5  md:px-8 bg-no-repeat bg-center bg-[length:100%_100%] justify-center items-center text-center">
+          <img
+            src="/assets/mata_img.png"
+            alt="Mata Image"
+            className="w-[60px] shrink-0 mt-10"
+          />
 
-            <h2 className="text-white bg-[#B35800] font-cormorant-garamond text-[22px] md:text-xl lg:text-[30px] mt-5 border px-8 py-2 rounded-xl">
-            Friday, 4th December 2026
-            </h2>
-  <div className="flex flex-col bg-[#E6B325] rounded-2xl lg:py-12 lg:px-20 px-6 py-6 md:mt-20 mt-6">
-            <h2 className="text-[#F6EFE2] font-cormorant-garamond text-[28px] md:text-2xl lg:text-[50px]">
-             Haldi ki rasam
-            </h2>
-  <p className="text-[#F6EFE2]  font-cormorant-garamond text-[16px] md:text-base mt-2">
-          8:00 am onwards
-            </p>
+          <h2 className="text-[#775A19] jacques-francois-regular text-[26px] md:text-[25px] lg:text-[30px] mt-2">
+            Mata ki Chowki
+          </h2>
 
+          <p className="text-[#775A19] jacques-francois-regular text-[18px] md:text-[17px] lg:text-xl mt-1">
+            26th January 2027
+          </p>
 
-            <p className="text-[#F6EFE2]  font-cormorant-garamond text-sm md:text-base mt-2">
-              <span className="text-[15px] md:text-base lg:text-xl  font-cormorant-garamond font-semibold">
-               Banquet Marudhar Palace  
-              </span>
-              <br />
-              Kanta Khaturia Street, near APEX Hospital, Bikaner, Rajasthan 334001
-            </p>
+          <p className="text-[#775A19] jacques-francois-regular text-[15px] md:text-[14px] lg:text-[15px]">
+            10:00 AM Onwards
+          </p>
 
-            <a
-              href="https://maps.app.goo.gl/TxqSAhseHFbnyNe99"
-              className="text-[#F6EFE2] underline md:text-sm text-[13px] mt-2  font-cormorant-garamond"
-              target="_blank"
-            >
-             View Location
-            </a>
+          <img
+            src="/assets/element4.png"
+            alt="Decorative Element"
+            className="w-[140px] md:w-[180px] py-3 shrink-0"
+          />
+
+          <p className="text-[#775A19] jacques-francois-regular text-sm md:text-sm lg:text-base px-4 md:px-0 leading-5 max-w-[650px]">
+            Join us for an afternoon of prayers, bhajan & dance, as we seek
+            divine blessings of Mata Rani to commence the Wedding Celebration of
+            Chetanya & Taanisha
+          </p>
+
+          <div className="w-[200px] border-b border-[#E8D1AF] my-3" />
+
+          <p className="text-[#775A19] jacques-francois-regular text-sm  md:text-[13px] lg:text-[15px] mt-2">
+            CHOWKI VENUE
+          </p>
+
+          <p className="text-[#775A19] jacques-francois-regular text-xl md:text-[18px] lg:text-xl mt-1">
+            GNH Conventions
+          </p>
+
+          <p className="text-[#775A19] jacques-francois-regular text-sm md:text-[13px] lg:text-base mt-1">
+            Sohna Road, Gurugram
+          </p>
+        </div>
+
+        {/* Mehendi ki Mehfil */}
+        {/* <div className="relative w-full min-h-119 md:min-h-119 lg:min-h-129 flex flex-col bg-[url('/assets/event_bg.webp')] rounded-2xl px-5  md:px-8 bg-no-repeat bg-center bg-[length:100%_100%] justify-center items-center text-center">
+          <img
+            src="/assets/mehandi_img.png"
+            alt="Mata Image"
+            className="w-[60px] shrink-0 mt-1"
+          />
+
+          <h2 className="text-[#775A19] jacques-francois-regular text-[26px] md:text-[25px] lg:text-[30px] mt-2">
+            Mehendi ki <br /> Mehfil
+          </h2>
+
+          <p className="text-[#775A19] jacques-francois-regular text-[18px] md:text-[17px] lg:text-xl mt-1">
+            30th January 2027
+          </p>
+
+          <p className="text-[#775A19] jacques-francois-regular text-[15px] md:text-[14px] lg:text-[15px]">
+            12:00 PM Onwards
+          </p>
+
+          <img
+            src="/assets/element4.png"
+            alt="Decorative Element"
+            className="w-[140px] md:w-[180px] py-3 shrink-0"
+          />
+
+         
+
+          <div className="w-[200px] border-b border-[#E8D1AF] my-3" />
+
+          <p className="text-[#775A19] jacques-francois-regular text-sm  md:text-[13px] lg:text-[15px] mt-2">
+            MEHENDI VENUE
+          </p>
+
+          <p className="text-[#775A19] jacques-francois-regular text-xl md:text-[18px] lg:text-xl mt-1">
+            Recreational Center
+          </p>
+
+          <p className="text-[#775A19] jacques-francois-regular text-sm md:text-[13px] lg:text-base mt-1">
+            DLF Capital Green, Moti Nagar, Delhi
+          </p>
+        </div> */}
+
+        {/* Haldi Hungama Gharoli */}
+        <div className="relative w-full min-h-119 md:min-h-119 lg:min-h-129 flex flex-col bg-[url('/assets/event_bg.webp')] rounded-2xl px-5  md:px-8 bg-no-repeat bg-center bg-[length:100%_100%] justify-center items-center text-center">
+          <img
+            src="/assets/haldi_img.png"
+            alt="Mata Image"
+            className="w-[60px] shrink-0 mt-10"
+          />
+
+          <h2 className="text-[#775A19] jacques-francois-regular text-[26px] md:text-[25px] lg:text-[30px] mt-2">
+            Haldi Hungama <br />
+            Gharoli
+          </h2>
+
+          <p className="text-[#775A19] jacques-francois-regular text-[18px] md:text-[17px] lg:text-xl mt-1">
+            1st Feb 2027
+          </p>
+
+          <p className="text-[#775A19] jacques-francois-regular text-[15px] md:text-[14px] lg:text-[15px]">
+            11AM to 2:30PM
+          </p>
+
+          <img
+            src="/assets/element4.png"
+            alt="Decorative Element"
+            className="w-[140px] md:w-[180px] py-3 shrink-0"
+          />
+
+          {/* <p className="text-[#775A19] jacques-francois-regular text-sm md:text-sm lg:text-base px-4 md:px-0 leading-5 max-w-[650px]">
+            Join us for an afternoon of prayers, bhajan & dance, as we seek
+            divine blessings of MataRani to commence the Wedding Celebration of
+            Chetanya & Taanisha
+          </p> */}
+
+          <div className="w-[200px] border-b border-[#E8D1AF] my-3" />
+
+          <p className="text-[#775A19] jacques-francois-regular text-sm  md:text-[13px] lg:text-[15px] mt-2">
+            POOLSIDE
+          </p>
+
+          <p className="text-[#775A19] jacques-francois-regular text-xl md:text-[18px] lg:text-xl mt-1">
+            Umaid Palace
+          </p>
+
+          <p className="text-[#775A19] jacques-francois-regular text-sm md:text-[13px] lg:text-base mt-1">
+            Jaipur-Agra National Highway <br />
+            Dausa, Rajasthan
+          </p>
+        </div>
+
+        {/* Jashn e Sagan */}
+        <div className="relative w-full min-h-119 md:min-h-119 lg:min-h-129 flex flex-col bg-[url('/assets/event_bg.webp')] rounded-2xl px-5  md:px-8 bg-no-repeat bg-center bg-[length:100%_100%] justify-center items-center text-center">
+          <img
+            src="/assets/jasn.png"
+            alt="Mata Image"
+            className="w-[60px] shrink-0 mt-1"
+          />
+
+          <h2 className="text-[#775A19] jacques-francois-regular text-[26px] md:text-[25px] lg:text-[30px] mt-2">
+            Jashn e Sagan
+          </h2>
+
+          <p className="text-[#775A19] jacques-francois-regular text-[18px] md:text-[17px] lg:text-xl mt-1">
+            1st Feb 2027
+          </p>
+
+          <p className="text-[#775A19] jacques-francois-regular text-[15px] md:text-[14px] lg:text-[15px]">
+            7PM Onwards
+          </p>
+
+          <img
+            src="/assets/element4.png"
+            alt="Decorative Element"
+            className="w-[140px] md:w-[180px] py-3 shrink-0"
+          />
+
+     
+
+          <div className="w-[200px] border-b border-[#E8D1AF] my-3" />
+
+          <p className="text-[#775A19] jacques-francois-regular text-sm  md:text-[13px] lg:text-[15px] mt-2">
+            MAHARAJA BAGH
+          </p>
+
+          <p className="text-[#775A19] jacques-francois-regular text-xl md:text-[18px] lg:text-xl mt-1">
+            Umaid Palace
+          </p>
+
+          <p className="text-[#775A19] jacques-francois-regular text-sm md:text-[13px] lg:text-base mt-1">
+            Jaipur-Agra National Highway <br />
+            Dausa, Rajasthan
+          </p>
+        </div>
+
+        {/* Din Shagna Da */}
+
+        <div className="relative w-full min-h-130 md:min-h-135 lg:min-h-145 3xl:min-h-140  flex flex-col bg-[url('/assets/event_bg.webp')] rounded-2xl px-5  md:px-8 bg-no-repeat bg-center bg-[length:100%_100%] justify-center items-center text-center">
+          <img
+            src="/assets/din.png"
+            alt="Mata Image"
+            className="w-[60px] shrink-0 mt-10"
+          />
+
+          <h2 className="text-[#775A19] jacques-francois-regular text-[26px] md:text-[25px] lg:text-[30px] mt-2">
+            Din Shagna Da
+          </h2>
+
+          <p className="text-[#775A19] jacques-francois-regular text-[18px] md:text-[17px] lg:text-xl mt-1">
+            2nd Feb 2027
+          </p>
+
+          <img
+            src="/assets/element4.png"
+            alt="Decorative Element"
+            className="w-[140px] md:w-[180px] py-3 shrink-0"
+          />
+
+          <div className="w-full flex flex-col gap-2 px-11">
+            <div className="flex justify-between items-center bg-[#FFF0D9] border border-[#E8C99E] rounded-md px-3 py-1.5">
+              <div className="flex flex-col items-start text-left">
+                <h3 className="font-cormorant-garamond text-[#805719] text-[14px] md:text-[15px] leading-tight">
+                  Breakfast
+                </h3>
+                <p className="font-cormorant-garamond text-[#A17A3F] text-[12px] md:text-[13px] leading-tight">
+                  The Haveli Verandah
+                </p>
+              </div>
+              <p className="font-cormorant-garamond text-[#805719] text-[14px] tracking-[3px]">
+                08 AM
+              </p>
+            </div>
+
+            <div className="flex justify-between items-center bg-[#FFF0D9] border border-[#E8C99E] rounded-md px-3 py-1.5">
+              <div className="flex flex-col items-start text-left">
+                <h3 className="font-cormorant-garamond text-[#805719] text-[14px] md:text-[15px] leading-tight">
+                  Sehrahbandi and Baraat
+                </h3>
+                <p className="font-cormorant-garamond text-[#A17A3F] text-[12px] md:text-[13px] leading-tight">
+                  Krishna Mandir
+                </p>
+              </div>
+              <p className="font-cormorant-garamond text-[#805719] text-[14px] tracking-[3px]">
+                10 AM
+              </p>
+            </div>
+
+            <div className="flex justify-between items-center bg-[#FFF0D9] border border-[#E8C99E] rounded-md px-3 py-1.5">
+              <div className="flex flex-col items-start text-left">
+                <h3 className="font-cormorant-garamond text-[#805719] text-[14px] md:text-[15px] leading-tight">
+                  Wedding
+                </h3>
+                <p className="font-cormorant-garamond text-[#A17A3F] text-[12px] md:text-[13px] leading-tight">
+                  Maharani Bagh
+                </p>
+              </div>
+              <p className="font-cormorant-garamond text-[#805719] text-[14px] tracking-[3px]">
+                12 PM
+              </p>
+            </div>
+
+            <div className="flex justify-between items-center bg-[#FFF0D9] border border-[#E8C99E] rounded-md px-3 py-1.5">
+              <div className="flex flex-col items-start text-left">
+                <h3 className="font-cormorant-garamond text-[#805719] text-[14px] md:text-[15px] leading-tight">
+                  Phere
+                </h3>
+                <p className="font-cormorant-garamond text-[#A17A3F] text-[12px] md:text-[13px] leading-tight">
+                  Baori
+                </p>
+              </div>
+              <p className="font-cormorant-garamond text-[#805719] text-[14px] tracking-[3px]">
+                03 PM
+              </p>
+            </div>
           </div>
 
- <div className="flex flex-col bg-[#E47763] rounded-2xl lg:py-12 lg:px-20 px-6 py-6 md:mt-20 mt-8">
-            <h2 className="text-[#F6EFE2] font-cormorant-garamond text-[28px] md:text-2xl lg:text-[50px] leading-8">
-             Phoolon ki barsaat
-            </h2>
-  <p className="text-[#F6EFE2]  font-cormorant-garamond text-[16px] md:text-base mt-2">
-          10:00 am onwards
-            </p>
+          {/* <p className="text-[#775A19] jacques-francois-regular text-sm  md:text-[13px] lg:text-[15px] mt-2">
+            CHOWKI VENUE
+          </p> */}
+
+          <p className="text-[#775A19] jacques-francois-regular text-sm md:text-[18px] lg:text-xl mt-1">
+            Umaid Palace
+          </p>
+
+          <p className="text-[#775A19] jacques-francois-regular text-sm md:text-[13px] lg:text-base mt-1">
+            Jaipur-Agra National Highway <br />
+            Dausa, Rajasthan
+          </p>
+        </div>
+
+        {/* The Final Bet */}
+        <div className="relative w-full min-h-119 md:min-h-119 lg:min-h-129 flex flex-col bg-[url('/assets/event_bg.webp')] rounded-2xl px-5  md:px-8 bg-no-repeat bg-center bg-[length:100%_100%] justify-center items-center text-center">
+          <img
+            src="/assets/final.png"
+            alt="Mata Image"
+            className="w-[60px] shrink-0 mt-1"
+          />
+
+          <h2 className="text-[#775A19] jacques-francois-regular text-[26px] md:text-[25px] lg:text-[30px] mt-2">
+            The Final Bet
+          </h2>
+
+          <p className="text-[#775A19] jacques-francois-regular text-[18px] md:text-[17px] lg:text-xl mt-1">
+            2nd Feb 2027
+          </p>
+
+          <p className="text-[#775A19] jacques-francois-regular text-[15px] md:text-[14px] lg:text-[15px]">
+            8PM Onwards
+          </p>
+
+          <img
+            src="/assets/element4.png"
+            alt="Decorative Element"
+            className="w-[140px] md:w-[180px] py-3 shrink-0"
+          />
+
+          <div className="w-[200px] border-b border-[#E8D1AF] my-3" />
+
+          <p className="text-[#775A19] jacques-francois-regular text-sm  md:text-[13px] lg:text-[15px] mt-2">
+            THE BALLROOM
+          </p>
+
+          <p className="text-[#775A19] jacques-francois-regular text-xl md:text-[18px] lg:text-xl mt-1">
+            Umaid Palace
+          </p>
+
+          <p className="text-[#775A19] jacques-francois-regular text-sm md:text-[13px] lg:text-base mt-1">
+            Jaipur-Agra National Highway <br />
+            Dausa, Rajasthan
+          </p>
+        </div>
+
+        {/* Vidaai */}
+     
+         <div className=" relative w-full min-h-119 md:min-h-119 lg:min-h-129 flex flex-col bg-[url('/assets/event_bg.webp')] rounded-2xl px-5  md:px-8 bg-no-repeat bg-center bg-[length:100%_100%] justify-center items-center text-center">
+          <img
+            src="/assets/vidaai.png"
+            alt="Mata Image"
+            className="w-[60px] shrink-0 mt-1"
+          />
+
+          <h2 className="text-[#775A19] jacques-francois-regular text-[26px] md:text-[25px] lg:text-[30px] mt-2">
+            Vidaai
+          </h2>
+          <p className="text-[#775A19] jacques-francois-regular text-[15px] md:text-[14px] lg:text-[15px] mt-1">
+            Breakfast
+          </p>
+
+          <p className="text-[#775A19] jacques-francois-regular text-[18px] md:text-[17px] lg:text-xl ">
+            3rd Feb 2027
+          </p>
+
+          <p className="text-[#775A19] jacques-francois-regular text-[15px] md:text-[14px] lg:text-[15px]">
+            8am Onwards
+          </p>
+
+          <img
+            src="/assets/element4.png"
+            alt="Decorative Element"
+            className="w-[140px] md:w-[180px] py-3 shrink-0"
+          />
+
+          <div className="w-[200px] border-b border-[#E8D1AF] my-3" />
+
+          <p className="text-[#775A19] jacques-francois-regular text-sm  md:text-[13px] lg:text-[15px] mt-2">
+            VIDAAI VENUE
+          </p>
+
+           <p className="text-[#775A19] jacques-francois-regular text-xl md:text-[18px] lg:text-xl mt-1">
+            Umaid Palace
+          </p>
+
+          <p className="text-[#775A19] jacques-francois-regular text-sm md:text-[13px] lg:text-base mt-1">
+            Jaipur-Agra National Highway <br />
+            Dausa, Rajasthan
+          </p>
+       
+       </div>
+      </div>
 
 
-            <p className="text-[#F6EFE2]  font-cormorant-garamond text-sm md:text-base mt-2">
-              <span className="text-[15px] md:text-base lg:text-xl  font-cormorant-garamond font-semibold">
-               Banquet Marudhar Palace 
-              </span>
-              <br />
-              Kanta Khaturia Street, near APEX Hospital, Bikaner, Rajasthan 334001
-            </p>
-
-            <a
-              href="https://maps.app.goo.gl/TxqSAhseHFbnyNe99"
-              className="text-[#F6EFE2] underline md:text-sm text-[13px] mt-2  font-cormorant-garamond"
-              target="_blank"
-            >
-             View Location
-            </a>
-          </div>
-
-<div className="flex flex-col bg-[#D9825B] rounded-2xl lg:py-12 lg:px-20 px-6 py-6 md:mt-20 mt-8">
-            <h2 className="text-[#F6EFE2] font-cormorant-garamond text-[28px] md:text-2xl lg:text-[50px]">
-           Bhaat rasam
-            </h2>
-  <p className="text-[#F6EFE2]  font-cormorant-garamond text-[16px] md:text-base mt-2">
-          3:30 pm onwards
-            </p>
-
-
-            <p className="text-[#F6EFE2]  font-cormorant-garamond text-sm md:text-base mt-2">
-              <span className="text-[15px] md:text-base lg:text-xl  font-cormorant-garamond font-semibold">
-               Banquet Marudhar Palace  
-              </span>
-              <br />
-              Kanta Khaturia Street, near APEX Hospital, Bikaner, Rajasthan 334001
-            </p>
-
-            <a
-              href="https://maps.app.goo.gl/TxqSAhseHFbnyNe99"
-              className="text-[#F6EFE2] underline md:text-sm text-[13px] mt-2  font-cormorant-garamond"
-              target="_blank"
-            >
-             View Location
-            </a>
-          </div>
-
-
-<div className="flex flex-col bg-[#7F1D2E] rounded-2xl lg:py-12 lg:px-20 px-6 py-6 md:mt-20 mt-8">
-            <h2 className="text-[#F6EFE2] font-cormorant-garamond text-[28px] md:text-2xl lg:text-[50px]">
-             Sangeet night
-            </h2>
-  <p className="text-[#F6EFE2]  font-cormorant-garamond text-[16px] md:text-base mt-2">
-         7:00 pm onwards
-            </p>
-
-
-            <p className="text-[#F6EFE2]  font-cormorant-garamond text-sm md:text-base mt-2">
-              <span className="text-[15px] md:text-base lg:text-xl  font-cormorant-garamond font-semibold">
-               Nemi Nath Garden
-              </span>
-              <br />
-              Kanta Khaturia Street, near APEX Hospital, Bikaner, Rajasthan 334001
-            </p>
-
-            <a
-              href="https://maps.app.goo.gl/TxqSAhseHFbnyNe99"
-              className="text-[#F6EFE2] underline md:text-sm text-[13px] mt-2  font-cormorant-garamond"
-              target="_blank"
-            >
-             View Location
-            </a>
-          </div>
-<div className="flex items-center w-full mt-16 mb-13">
-  <div className="flex-1">
-    <div className="border-t-2 border-[#B35800]" />
-    <div className="border-t border-[#B35800] mt-1" />
-  </div>
-
-  <span className="mx-4 text-[#B35800] text-lg">✦</span>
-
-  <div className="flex-1">
-    <div className="border-t-2 border-[#B35800]" />
-    <div className="border-t border-[#B35800] mt-1" />
-  </div>
-</div>
 
 
 
-          <h2 className="font-cormorant-garamond text-[22px] md:text-xl lg:text-[30px] border px-8 py-2 rounded-xl text-white bg-[#B35800]">
-            Saturday, 5th December 2026
-            </h2>   
-
-           <div className="flex flex-col bg-[#E85D4A] rounded-2xl lg:py-12 lg:px-20 px-6 py-6 md:mt-20 mt-8">
-            <h2 className="text-[#F6EFE2] font-cormorant-garamond text-[28px] md:text-2xl lg:text-[50px]">
-             Fun Carnival
-            </h2>
-  <p className="text-[#F6EFE2]  font-cormorant-garamond text-[16px] md:text-base mt-2">
-        10:00 am onwards
-            </p>
-
-
-            <p className="text-[#F6EFE2]  font-cormorant-garamond text-sm md:text-base mt-2">
-              <span className="text-[15px] md:text-base lg:text-xl  font-cormorant-garamond font-semibold">
-               Nemi Nath Garden
-              </span>
-              <br />
-              Kanta Khaturia Street, near APEX Hospital, Bikaner, Rajasthan 334001
-            </p>
-
-            <a
-              href="https://maps.app.goo.gl/TxqSAhseHFbnyNe99"
-              className="text-[#F6EFE2] underline md:text-sm text-[13px] mt-2  font-cormorant-garamond"
-              target="_blank"
-            >
-             View Location
-            </a>
-          </div>
-
- <div className="flex flex-col bg-[#E85D4A] rounded-2xl lg:py-12 lg:px-20 px-6 py-6 md:mt-20 mt-8">
-            <h2 className="text-[#F6EFE2] font-cormorant-garamond text-[28px] md:text-2xl lg:text-[50px]">
-             Baarat prasthan
-            </h2>
-  <p className="text-[#F6EFE2]  font-cormorant-garamond text-[16px] md:text-base mt-2">
-        5:30 pm onwards
-            </p>
-
-
-            <p className="text-[#F6EFE2]  font-cormorant-garamond text-sm md:text-base mt-2">
-              <span className="text-[15px] md:text-base lg:text-xl  font-cormorant-garamond font-semibold">
-               Kothari palace
-              </span>
-              <br />
-             284C+WC7, Rani Bazar, Bikaner, Rajasthan 334001
-            </p>
-
-            <a
-              href="https://maps.app.goo.gl/5wPTZm5q4h3snyu78"
-              className="text-[#F6EFE2] underline md:text-sm text-[13px] mt-2  font-cormorant-garamond"
-              target="_blank"
-            >
-             View Location
-            </a>
-          </div> 
-          
-          <div className="flex flex-col bg-[#8B6FAE] rounded-2xl lg:py-12 lg:px-20 px-6 py-6 md:mt-20 mt-8">
-            <h2 className="text-[#F6EFE2] font-cormorant-garamond text-[28px] md:text-2xl lg:text-[50px]">
-          Shubh vivah
-            </h2>
-  <p className="text-[#F6EFE2]  font-cormorant-garamond text-[16px] md:text-base mt-2">
-         7:00 pm onwards
-            </p>
-
-
-            <p className="text-[#F6EFE2]  font-cormorant-garamond text-sm md:text-base mt-2">
-              <span className="text-[15px] md:text-base lg:text-xl  font-cormorant-garamond font-semibold">
-               Nemi Nath Garden
-              </span>
-              <br />
-              Kanta Khaturia Street, near APEX Hospital, Bikaner, Rajasthan 334001
-            </p>
-
-            <a
-              href="https://maps.app.goo.gl/TxqSAhseHFbnyNe99"
-              className="text-[#F6EFE2] underline md:text-sm text-[13px] mt-2  font-cormorant-garamond"
-              target="_blank"
-            >
-             View Location
-            </a>
-          </div> 
 
     </div>
+ 
+   
   );
 }

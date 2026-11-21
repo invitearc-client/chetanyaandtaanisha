@@ -17,8 +17,8 @@ export default function ScratchText({ onReveal }) {
 
     const ctx = canvas.getContext("2d");
 
-    const width = 320;
-    const height = 70; // container height se match
+    const width = 670;
+    const height = 130;
 
     canvas.width = width;
     canvas.height = height;
@@ -30,52 +30,89 @@ export default function ScratchText({ onReveal }) {
     const drawLayer = () => {
       ctx.globalCompositeOperation = "source-over";
 
+      // Golden background
       const gradient = ctx.createLinearGradient(0, 0, width, height);
 
-      gradient.addColorStop(0, "#FFF6BF");
-      gradient.addColorStop(0.15, "#FFE36A");
-      gradient.addColorStop(0.35, "#F2C94C");
-      gradient.addColorStop(0.55, "#CFA11A");
-      gradient.addColorStop(0.75, "#A97800");
-      gradient.addColorStop(1, "#FFE36A");
+      gradient.addColorStop(0, "#C99A55");
+      gradient.addColorStop(0.2, "#F8E5B3");
+      gradient.addColorStop(0.5, "#DDB66F");
+      gradient.addColorStop(0.8, "#F5DDA7");
+      gradient.addColorStop(1, "#BD8B45");
 
       ctx.fillStyle = gradient;
       ctx.fillRect(0, 0, width, height);
 
-      // Metallic texture
-      ctx.globalAlpha = 0.18;
+      // Metallic shine
+      const shine = ctx.createLinearGradient(0, 0, width, height);
 
-      for (let i = 0; i < 5000; i++) {
-        ctx.fillStyle =
-          Math.random() > 0.5 ? "rgba(255,255,255,.9)" : "rgba(120,80,0,.8)";
-        ctx.fillRect(Math.random() * width, Math.random() * height, 1, 1);
-      }
-
-      ctx.globalAlpha = 1;
-
-      // Shine
-      const shine = ctx.createLinearGradient(0, 0, width, 0);
-
-      shine.addColorStop(0, "transparent");
-      shine.addColorStop(0.45, "rgba(255,255,255,.15)");
-      shine.addColorStop(0.5, "rgba(255,255,255,.55)");
-      shine.addColorStop(0.55, "rgba(255,255,255,.15)");
-      shine.addColorStop(1, "transparent");
+      shine.addColorStop(0, "rgba(255,255,255,0.25)");
+      shine.addColorStop(0.5, "rgba(255,245,205,0.55)");
+      shine.addColorStop(1, "rgba(255,255,255,0.15)");
 
       ctx.fillStyle = shine;
       ctx.fillRect(0, 0, width, height);
 
-      // Border
-      ctx.strokeStyle = "rgba(255,255,255,.25)";
-      ctx.lineWidth = 1;
-      ctx.strokeRect(0.5, 0.5, width - 1, height - 1);
+      // Golden texture and sparkles
+      for (let i = 0; i < 1000; i++) {
+        const x = Math.random() * width;
+        const y = Math.random() * height;
+        const size = Math.random() * 2 + 0.5;
 
-      // Text
-      ctx.fillStyle = "#ffffff";
-      ctx.font = "bold 20px Georgia";
+        ctx.fillStyle =
+          Math.random() > 0.4
+            ? "rgba(255,255,255,0.45)"
+            : "rgba(120,75,20,0.15)";
+
+        ctx.beginPath();
+        ctx.arc(x, y, size, 0, Math.PI * 2);
+        ctx.fill();
+      }
+
+      // Outer border
+      ctx.strokeStyle = "#A8793D";
+      ctx.lineWidth = 5;
+      ctx.strokeRect(5, 5, width - 10, height - 10);
+
+      // Inner border
+      ctx.strokeStyle = "rgba(255,245,210,0.8)";
+      ctx.lineWidth = 2;
+      ctx.strokeRect(14, 14, width - 28, height - 28);
+
+      // Decorative corners
+      const drawCorner = (x, y, sx, sy) => {
+        ctx.save();
+
+        ctx.translate(x, y);
+        ctx.scale(sx, sy);
+
+        ctx.fillStyle = "rgba(120,75,30,0.4)";
+        ctx.font = "bold 23px Georgia";
+        ctx.textAlign = "center";
+
+        ctx.fillText("❧", 0, 15);
+
+        ctx.restore();
+      };
+
+      drawCorner(28, 25, 1, 1);
+      drawCorner(width - 28, 25, -1, 1);
+      drawCorner(28, height - 25, 1, -1);
+      drawCorner(width - 28, height - 25, -1, -1);
+
+      // Main Heading
       ctx.textAlign = "center";
       ctx.textBaseline = "middle";
-      ctx.fillText("✨ Scratch to Reveal ✨", width / 2, height / 2);
+
+      ctx.fillStyle = "#68401F";
+      ctx.font = "bold 32px Georgia";
+
+      ctx.fillText("✦  Scratch to Reveal  ✦", width / 2, 43);
+
+      // Subtitle
+      ctx.fillStyle = "#80552D";
+      ctx.font = "italic 18px Georgia";
+
+      ctx.fillText("A little surprise awaits...", width / 2, 78);
 
       ctx.globalCompositeOperation = "destination-out";
     };
@@ -135,14 +172,17 @@ export default function ScratchText({ onReveal }) {
         ctx.lineWidth = Math.random() * 2 + 1;
 
         ctx.beginPath();
+
         ctx.moveTo(
           x + (Math.random() - 0.5) * 20,
           y + (Math.random() - 0.5) * 20,
         );
+
         ctx.lineTo(
           x + (Math.random() - 0.5) * 35,
           y + (Math.random() - 0.5) * 35,
         );
+
         ctx.stroke();
       }
 
@@ -162,8 +202,10 @@ export default function ScratchText({ onReveal }) {
       completed = true;
 
       console.log("REVEALED");
-      onRevealRef.current?.(); // countdown show trigger
 
+      onRevealRef.current?.();
+
+      // First confetti
       confetti({
         particleCount: 300,
         spread: 100,
@@ -173,19 +215,16 @@ export default function ScratchText({ onReveal }) {
         ticks: 250,
         origin: { x: 0.5, y: 0.5 },
         colors: [
-          "#FF4D6D",
-          "#FF6B6B",
-          "#FFD93D",
-          "#6BCB77",
-          "#4D96FF",
-          "#845EC2",
-          "#FF9671",
-          "#00C9A7",
-          "#FFFFFF",
-          "#FFD700",
+          "#775A19",
+          "#775A19",
+          "#775A19",
+          "#775A19",
+          "#775A19",
+          "#775A19",
         ],
       });
 
+      // Second confetti
       setTimeout(() => {
         confetti({
           particleCount: 100,
@@ -198,6 +237,7 @@ export default function ScratchText({ onReveal }) {
         });
       }, 150);
 
+      // Fade out canvas
       canvas.style.transition = "opacity .5s ease";
       canvas.style.opacity = "0";
 
@@ -207,10 +247,15 @@ export default function ScratchText({ onReveal }) {
       }, 500);
     };
 
+    // ==========================
+    // CHECK SCRATCH PROGRESS
+    // ==========================
+
     const checkScratch = () => {
       if (completed) return;
 
       const imageData = ctx.getImageData(0, 0, width, height);
+
       const pixels = imageData.data;
 
       let transparent = 0;
@@ -222,15 +267,21 @@ export default function ScratchText({ onReveal }) {
       const scratched = transparent / (width * height);
 
       // Reveal after 40%
-      if (scratched > 0.4) {
+      if (scratched > 0.2) {
         reveal();
       }
     };
 
+    // ==========================
+    // MOUSE / TOUCH POSITION
+    // ==========================
+
     const getPos = (e) => {
       const rect = canvas.getBoundingClientRect();
+
       const scaleX = width / rect.width;
       const scaleY = height / rect.height;
+
       const point = e.touches && e.touches.length ? e.touches[0] : e;
 
       return {
@@ -239,6 +290,7 @@ export default function ScratchText({ onReveal }) {
       };
     };
 
+    // Start scratching
     const start = (e) => {
       if (completed) return;
 
@@ -253,6 +305,7 @@ export default function ScratchText({ onReveal }) {
       checkScratch();
     };
 
+    // Move scratching
     const move = (e) => {
       if (!drawing || completed) return;
 
@@ -264,20 +317,28 @@ export default function ScratchText({ onReveal }) {
       checkScratch();
     };
 
+    // Stop scratching
     const end = () => {
       drawing = false;
     };
 
-    // Mouse
+    // Mouse events
     canvas.addEventListener("mousedown", start);
     canvas.addEventListener("mousemove", move);
     window.addEventListener("mouseup", end);
 
-    // Touch
-    canvas.addEventListener("touchstart", start, { passive: false });
-    canvas.addEventListener("touchmove", move, { passive: false });
+    // Touch events
+    canvas.addEventListener("touchstart", start, {
+      passive: false,
+    });
+
+    canvas.addEventListener("touchmove", move, {
+      passive: false,
+    });
+
     window.addEventListener("touchend", end);
 
+    // Cleanup
     return () => {
       canvas.removeEventListener("mousedown", start);
       canvas.removeEventListener("mousemove", move);
@@ -291,30 +352,35 @@ export default function ScratchText({ onReveal }) {
 
   return (
     <div
-      className="relative inline-block overflow-hidden rounded-md select-none mt-12"
+      className="relative block w-full max-w-[350px] overflow-hidden rounded-md select-none mx-0 p-0"
       style={{
-        width: "320px",
-        height: "70px",
+        aspectRatio: "670 / 140",
+        lineHeight: 0,
       }}
     >
       {/* Hidden Text */}
       <div
         className="absolute inset-0 flex items-center justify-center border bg-white rounded-[12px]"
         style={{
-          color: "#B35800",
+          color: "#775A19",
           fontFamily: "EB Garamond, serif",
           fontWeight: 600,
-          fontSize: "30px",
+          fontSize: "clamp(28px, 4.5vw, 30px)",
           letterSpacing: ".5px",
           textShadow: "0 1px 6px rgba(255,215,0,.35)",
         }}
       >
-        4<sup className="text-[16px]">th</sup>&5<sup className="text-[16px]">th</sup> December
+        2<sup className="text-[16px] pr-2">nd</sup> February
       </div>
 
+      {/* Scratch Canvas */}
       <canvas
         ref={canvasRef}
-        className="absolute inset-0 w-full h-full touch-none cursor-pointer"
+        className="absolute inset-0 block w-full h-full touch-none cursor-pointer"
+        style={{
+          margin: 0,
+          padding: 0,
+        }}
       />
 
       {/* Shine Animation */}

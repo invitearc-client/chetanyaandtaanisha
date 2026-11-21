@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState, useRef } from "react";
-import IntroVideo from "./components/IntroVideo";
+// import IntroVideo from "./components/IntroVideo";
 import HeroSection from "./components/HeroSection";
 
 export default function Home() {
@@ -64,7 +64,7 @@ export default function Home() {
       <audio ref={audioRef} src="/assets/song.mp3" loop preload="auto" playsInline />
 
       <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-        <IntroVideo />
+        {/* <IntroVideo />  */}
         <HeroSection />
       </div>
     </>

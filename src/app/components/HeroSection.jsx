@@ -9,77 +9,63 @@ export default function HeroSection() {
   const [selectedSide, setSelectedSide] = useState(null);
 
   return (
-    <section id="home" className="relative min-h-screen w-full scroll-mt-0">
-
-      {/* ================= BACKGROUND ================= */}
-      <div
-        className="fixed inset-0 z-0 h-screen w-full bg-[#faf4e8] bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: "url('/assets/family-bg5.webp')",
-          backgroundColor: "#faf4e8",
-        }}
-      />
-
-  <div className="pointer-events-none fixed inset-0 z-20 h-screen w-screen">
-    <RoseHeroTemp />
-  </div>
+   <section id="home" className="relative flex min-h-screen w-full flex-col overflow-x-clip">
+  {/* BACKGROUND */}
+<div
+  className="
+    absolute inset-0 z-0 w-full
+    bg-[#faf4e8]
+    bg-[url('/assets/stock_mobile_bg3.webp')]
+    lg:bg-[url('/assets/stock_bg.webp')]
+    bg-top bg-no-repeat
+    bg-[length:100%_auto]
+  "
+/>
+      <div className="pointer-events-none fixed inset-0 z-20 h-screen w-screen">
+        <RoseHeroTemp />
+      </div>
       {/* ================= CONTENT ================= */}
-      <div className="relative z-10 flex min-h-screen w-full flex-col items-center px-10 py-10 pb-28 sm:px-8 md:px-12 lg:px-16 mt-10">
 
+       <div className="relative z-10 flex w-full flex-1 flex-col items-center  pt-10  sm:px-8 md:px-2 lg:px-6">
         {/* ================= GANESH ================= */}
-        <div className="mt-4 flex justify-center md:mt-8">
+        <div className="mt-4 flex justify-center md:mt-4 lg:mt-8">
           <img
-            src="/assets/ganes.png"
+            src="/assets/ganesh.png"
             alt="Shree Ganesh"
-            className="w-[100px] sm:w-[65px] md:w-[150px]"
+            className="w-[65px] sm:w-[65px] md:w-[90px] lg:w-[150px]"
           />
         </div>
-
+  {/* <p className="text-[17px] md:text-2xl text-[#000] font-cormorant-garamond">
+        Smt. Shashi Gupta w/o Late Shri Jugal Kishore Gupta and Smt. Neelam Malhotra w/o Late Shri Ravinder Kumar Malhotra
+      </p> */}
         {/* ================= WEDDING LOGO ================= */}
-        <div className="mt-8 flex flex-col items-center text-center md:mt-10">
+        <div className="mt-8 flex flex-col items-center text-center md:mt-18 lg:mt-24">
           <img
-            src="/assets/wedding-logo.png"
+            src="/assets/logo.png"
             alt="Wedding Logo"
-            className="w-[180px] sm:w-[220px] md:w-[280px]"
+            className="w-[110px]  md:w-[180px] lg:w-[280px]"
           />
-
-          <p className="mt-3 text-[15px] tracking-[0.15em] text-[#B35800] sm:text-xs md:mt-5 md:text-2xl font-cormorant-garamond">
-            #AdityaGotHisPriyanka
-          </p>
-        </div>
-
-        {/* ================= CHOOSE TEXT ================= */}
-        <div className="mt-14 text-center sm:mt-16 md:mt-20">
-          <p className="text-[18px] text-[#B35800] md:text-xl font-cormorant-garamond">
-            PLEASE CHOOSE ONE TO CONTINUE
-          </p>
         </div>
 
         {/* ================= BUTTONS ================= */}
-        <div className="mt-8 flex w-full max-w-[500px] flex-col items-center justify-center gap-4 sm:flex-row md:mt-10">
-
+        <div className="mt-80 flex w-full max-w-[500px]  items-center justify-center md:gap-4 flex-row md:mt-160 lg:mt-180 3xl:mt-250">
           {/* LADKE */}
           <button
             type="button"
             onClick={() => setSelectedSide("ladke")}
             className={`
-              w-full max-w-[220px]
-              rounded-full
-              px-8 py-3
-              text-xs tracking-[0.12em]
-              text-white
-              transition-all duration-300
-              sm:w-[200px]
-              md:w-[220px] md:py-3.5 md:text-sm
-              cursor-pointer font-cormorant-garamond
-              ${
-                selectedSide === "ladke"
-                  ? "scale-105 bg-[#B35800] shadow-lg"
-                  : "bg-[#B35800] hover:scale-105 hover:bg-[#B35800]"
-              }
-            `}
+  w-full max-w-[220px] px-8 py-3
+  text-xs tracking-[0.12em] text-[#2B1A12] font-semibold
+  transition-all duration-300
+  sm:w-[200px] md:w-[220px] md:py-3.5 md:text-sm
+  cursor-pointer font-cormorant-garamond
+  bg-[url('/assets/button_bg.png')]
+  bg-contain bg-center bg-no-repeat
+  hover:scale-105
+  ${selectedSide === "ladke" ? "scale-105 shadow-lg" : ""}
+`}
           >
-            LADKE WAALE
+            LADKE WAALE 
           </button>
 
           {/* LADKI */}
@@ -87,42 +73,41 @@ export default function HeroSection() {
             type="button"
             onClick={() => setSelectedSide("ladki")}
             className={`
-              w-full max-w-[220px]
-              rounded-full
-              px-8 py-3
-              text-xs tracking-[0.12em]
-              text-white
-              transition-all duration-300
-              sm:w-[200px]
-              md:w-[220px] md:py-3.5 md:text-sm
-              cursor-pointer font-cormorant-garamond
-              ${ 
-                selectedSide === "ladki"
-                  ? "scale-105 bg-[#B35800] shadow-lg"
-                  : "bg-[#B35800] hover:scale-105 hover:bg-[#B35800]"
-              }
-            `}
+  w-full max-w-[220px] px-8 py-3
+  text-xs tracking-[0.12em] text-[#2B1A12] font-semibold
+  transition-all duration-300
+  sm:w-[200px] md:w-[220px] md:py-3.5 md:text-sm
+  cursor-pointer font-cormorant-garamond
+  bg-[url('/assets/button_bg.png')]
+  bg-contain bg-center bg-no-repeat
+  hover:scale-105
+  ${selectedSide === "ladke" ? "scale-105 shadow-lg" : ""}
+`}
           >
             LADKI WAALE
           </button>
-
+        </div>
+        {/* ================= CHOOSE TEXT ================= */}
+        <div className="mt-4 text-center sm:mt-16 md:mt-10 mb-24">
+          <p className="text-[15px] text-[#F6F0E4] md:text-2xl font-cormorant-garamond tracking-widest">
+            PLEASE CHOOSE ONE TO CONTINUE
+          </p>
         </div>
 
         {/* ================= SELECTED DETAILS ================= */}
         {selectedSide && (
-          <div className="mt-12 w-full max-w-5xl pb-10 md:mt-16">
-
-            {selectedSide === "ladke" ? (
-              <LadkeDetails />
-            ) : (
-              <LadkiDetails />
-            )}
-
+          <div className=" w-full max-w-5xl pb-10  ">
+            {selectedSide === "ladke" ? <LadkeDetails /> : <LadkiDetails />}
           </div>
         )}
-
       </div>
       {selectedSide && <BottomNavigation />}
+
+
+
+
     </section>
+
+    
   );
 }

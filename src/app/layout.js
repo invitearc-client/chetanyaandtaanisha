@@ -14,19 +14,19 @@ const geistMono = Geist_Mono({
 
 
 export const metadata= {
-  metadataBase: new URL("https://adityaandpriyanka.vercel.app/"),
+  metadataBase: new URL("https://chetanyaandtaanisha.vercel.app/"),
 
   openGraph: {
-    title: "Aditya & Priyanka",
-    description: "Join as they begin their forever. 4 & 5 December, 2026",
-    url: "https://adityaandpriyanka.vercel.app/",
+    title: "Chetanya & Taanisha",
+    description: "Join as they begin their forever.",
+    url: "https://chetanyaandtaanisha.vercel.app/",
     siteName: "InviteArc",
     images: [
       {
         url: "/og.jpg",
         width: 1200,
         height: 630,
-        alt: "Aditya & Priyanka",
+        alt: "Chetanya & Taanisha",
       }, 
     ],
     type: "website",
@@ -35,13 +35,13 @@ export const metadata= {
 
   twitter: {
     card: "summary_large_image",
-    title: "Aditya & Priyanka",
-    description: "Join as they begin their forever. 4 & 5  November, 2026",
+    title: "Chetanya & Taanisha",
+    description: "Join as they begin their forever.",
     images: ["/og.jpg"],
   },
 
  other: {
-    "og:image:secure_url": "https://adityaandpriyanka.vercel.app/og.jpg",
+    "og:image:secure_url": "https://chetanyaandtaanisha.vercel.app/og.jpg",
     "og:image:type": "image/jpg",
   },
 };
@@ -63,7 +63,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
 
-        <DisableInspect /> 
+        {/* <DisableInspect />  */}
         {children}
       </body>
     </html>

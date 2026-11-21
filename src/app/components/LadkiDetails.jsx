@@ -1,61 +1,59 @@
-'use client';
-import { useState } from "react";
-import ScratchText from "../components/ScratchText";
-import MarriageCountdown from "../components/MarriageCountdown";
+"use client";
+
+import LadkiSecondDetails from "../components/LadkiSecondDetails";
+
 import LadkiEvents from "../components/LadkiEvents";
-import Wardrobe from "../components/Wardrobe";
-import PhotoGallery from "../components/PhotoGallery";
-import LadkiWeather from "../components/LadkiWeather";
-import Venues from "../components/Venues";
+
 
 export default function LadkiDetails() {
-  const [revealed, setRevealed] = useState(false);
-
   return (
-    <div className="mx-auto w-full max-w-4xl text-center md:p-2">
-      <p className="text-[17px] md:text-2xl text-[#B35800] font-cormorant-garamond">
-        With the blessing of Smt. Pushpa Devi Dwarkani & Late Kishan Lal Ji Dwarkani
-      </p> <br />
-      <p className="text-[17px] md:text-2xl text-[#B35800] font-cormorant-garamond">
-        We cordially invite you to the wedding ceremony of their Granddaughter
-      </p>
-
-      <div className="mt-8 text-center">
-        <h2 className="text-[#B35800] font-pinyon-script text-center mt-14 md:text-4xl text-[38px] lg:text-[60px] leading-tight font-bold">
-          Priyanka Dwarkani
-        </h2>
-
-        <p className="text-[#B35800] font-cormorant-garamond lg:text-[30px] md:text-2xl mt-2 text-[16px]">
-          (D/o Smt. Rakhi Dwarkani & Shri Kamal Ji Dwarkani)
+    <>
+      <div className="mx-auto w-full max-w-4xl text-center px-4">
+        <p className="text-[17px] md:text-2xl text-[#F6F0E4] font-cormorant-garamond">
+          With the Blessings of Lord Ganesha
+        </p>{" "}
+        <br />
+        <p className="text-[17px] md:text-2xl text-[#F6F0E4] font-cormorant-garamond">
+          Smt. Shashi Gupta w/o Late Shri Jugal Kishore Gupta <br /> and <br />{" "}
+          Smt. Neelam Malhotra w/o Late Shri Ravinder Kumar Malhotra
         </p>
-
-        <h2 className="text-[#B35800] font-pinyon-script text-center text-[38px] sm:text-7xl lg:text-[60px] leading-tight font-bold">
-          <span className="text-[#B35800] font-cormorant-garamond text-center md:text-3xl text-[28px] lg:text-[36px] leading-tight font-medium">
-            With
-          </span>
-          <br />
-          Aditya Tawri
-        </h2>
-
-        <p className="text-[#B35800] font-cormorant-garamond lg:text-[30px] md:text-2xl mt-2 text-[16px]">
-          (S/o Smt. Kusum Lata Tawri & Shri Kishan Kumar Tawri)
+        <p className="text-[17px] md:text-2xl text-[#F6F0E4] font-cormorant-garamond mt-4">
+          would like to cordially invite you to the Wedding of their
+          granddaughter,
         </p>
+        <div className="mt-8 text-center">
+          <h2 className="text-[#F6F0E4] cinzel text-center mt-14 md:text-4xl text-[38px] lg:text-[60px] leading-tight">
+            TAANISHA
+          </h2>
 
-        <ScratchText onReveal={() => setRevealed(true)} />
+          <p className="text-[#F6F0E4] font-cormorant-garamond md:text-2xl mt-2 text-[14px]">
+            (Daughter of Mrs. Shweta and Mr. Amit Gupta )
+          </p>
 
-       {revealed && (
-      <div className="countdown-fade-in">
-        <MarriageCountdown />
+          <h2 className="text-[#F6F0E4] cinzel text-center text-[38px] sm:text-7xl lg:text-[60px] leading-tight">
+            <span className="text-[#F6F0E4] font-cormorant-garamond text-center md:text-3xl text-[28px] lg:text-[36px] leading-tight font-medium">
+              Weds
+            </span>
+            <br />
+            CHETANYA 
+          </h2>
+
+          <p className="text-[#F6F0E4] font-cormorant-garamond  md:text-2xl mt-2 text-[14px]">
+            (Son of Mrs. Jyoti and Mr. Sanjay Koti)
+          </p>
+
+          <LadkiEvents />
+        </div>
       </div>
-    )}
-    
+      <img
+        src="/assets/hero_section_bottom.webp"
+        alt="Mata Image"
+        className="relative left-1/2 mt-24 block w-screen max-w-none -translate-x-1/2"
+      />
 
-        <LadkiEvents />
-        <Wardrobe />
-        <PhotoGallery />
-        <LadkiWeather />
-        <Venues />
-      </div>
-    </div>
+      <LadkiSecondDetails />
+
+     
+    </>
   );
 }
