@@ -22,15 +22,27 @@ export default function LadkaSecondDetails() {
           Awaiting the Pleasure of Your Company
         </h2>
 
-        <p className="md:text-xl text-[15px] text-[#775A19] text-center mt-3 jacques-francois-regular">
+        {/* <p className="md:text-xl text-[15px] text-[#775A19] text-center mt-3 jacques-francois-regular">
           Click the link to RSVP
-        </p>
+        </p> */}
+       <p className="md:text-xl text-[15px] text-[#775A19] text-center mt-3 jacques-francois-regular">
+  Click the{" "}
+  <a
+    href="https://docs.google.com/forms/d/e/1FAIpQLSc3NmbXylgsS7hgyhU5-uCeEgOr9D0mKrviQLYkiQCxm1u2bQ/viewform?usp=sharing&ouid=111123382395927427405"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="underline underline-offset-2"
+  >
+    link
+  </a>{" "}
+  to RSVP
+</p>
 
-        <img
+        {/* <img
             src="/assets/whatsapp.png"
             alt="Shree Ganesh"
             className="w-[40px]"
-          />
+          /> */}
       </div>
 
 

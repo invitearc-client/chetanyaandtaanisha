@@ -60,11 +60,11 @@ export default function HeroSection({ onSideChange }) {
             type="button"
             data-side-song
             onClick={(event) => selectSide("ladke", event)}
-            className={`
-  w-full max-w-[220px] px-8 py-3
+            className={`relative flex items-center justify-between
+  w-full max-w-[195px] md:max-w-[220px] lg:max-w-[250px] px-6 lg:px-11 py-3
   text-xs tracking-[0.12em] text-[#2B1A12] font-semibold
   transition-all duration-300
-  sm:w-[200px] md:w-[220px] md:py-3.5 md:text-sm
+  w-[195px] md:w-[220px] lg:w-[250px] md:py-3.5 md:text-sm
   cursor-pointer font-cormorant-garamond
   bg-[url('/assets/button_bg.png')]
   bg-contain bg-center bg-no-repeat
@@ -72,7 +72,26 @@ export default function HeroSection({ onSideChange }) {
   ${selectedSide === "ladke" ? "scale-105 shadow-lg" : ""}
 `}
           >
-            LADKE WAALE 
+ <img
+            src="/assets/ladke_icon.png"
+            alt="Mata Image"
+            className="w-5 shrink-0"
+          />
+
+             <span className="flex-1 text-center font-cormorant-garamond font-semibold tracking-wide pl-1">
+    LADKE WAALE
+  </span>
+
+  {/* Right Arrow */}
+  <svg
+    className="h-4 w-4 shrink-0 text-[#9B782F]"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+  >
+    <path d="m9 5 7 7-7 7" />
+  </svg>
           </button>
 
           {/* LADKI */}
@@ -80,11 +99,11 @@ export default function HeroSection({ onSideChange }) {
             type="button"
             data-side-song
             onClick={(event) => selectSide("ladki", event)}
-            className={`
-  w-full max-w-[220px] px-8 py-3
+            className={`relative flex items-center justify-between
+  w-full max-w-[195px] md:max-w-[220px] lg:max-w-[250px] px-6 lg:px-10 py-3
   text-xs tracking-[0.12em] text-[#2B1A12] font-semibold
   transition-all duration-300
-  sm:w-[200px] md:w-[220px] md:py-3.5 md:text-sm
+  w-[195px] md:w-[220px] lg:w-[250px] md:py-3.5 md:text-sm
   cursor-pointer font-cormorant-garamond
   bg-[url('/assets/button_bg.png')]
   bg-contain bg-center bg-no-repeat
@@ -92,7 +111,25 @@ export default function HeroSection({ onSideChange }) {
   ${selectedSide === "ladki" ? "scale-105 shadow-lg" : ""}
 `}
           >
-            LADKI WAALE
+           <img
+            src="/assets/ladki.png"
+            alt="Mata Image"
+            className="w-5 shrink-0"
+          />
+          <span className="flex-1 text-center font-cormorant-garamond font-semibold tracking-wide pl-1">
+    LADKI WAALE
+  </span>
+
+
+  <svg
+    className="h-4 w-4 shrink-0 text-[#9B782F]"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+  >
+    <path d="m9 5 7 7-7 7" />
+  </svg>
           </button>
         </div>
         {/* ================= CHOOSE TEXT ================= */}

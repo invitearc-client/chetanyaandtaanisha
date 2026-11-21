@@ -8,16 +8,16 @@ const items = [
 ];
 
 function NavIcon({ name }) {
-  const iconProps = {
-    viewBox: "0 0 24 24",
-    className: "h-5 w-5",
-    fill: "none",
-    stroke: "currentColor",
-    strokeWidth: 1.7,
-    strokeLinecap: "round",
-    strokeLinejoin: "round",
-    "aria-hidden": true,
-  };
+ const iconProps = {
+  viewBox: "0 0 24 24",
+  className: "h-5 w-5",
+  fill: "none",
+  stroke: "#B88E3F",
+  strokeWidth: 1.7,
+  strokeLinecap: "round",
+  strokeLinejoin: "round",
+  "aria-hidden": true,
+};
 
   switch (name) {
     case "home":
@@ -37,18 +37,40 @@ function NavIcon({ name }) {
 
 export default function BottomNavigation() {
   return (
-    <nav
+    // <nav
+    //   aria-label="Page sections"
+    //   className="fixed inset-x-0 bottom-0 z-60 border-t border-[#C5A05940] bg-[#FAF5EBF2] pb-[env(safe-area-inset-bottom)] text-[#F6EFE2] shadow-[0_-4px_18px_rgba(0,0,0,0.2)] rounded-tl-2xl rounded-tr-2xl"
+    // >
+    //   <div className="mx-auto grid min-h-16 max-w-3xl grid-cols-6">
+    //     {items.map((item) => (
+    //       <a
+    //         key={item.href}
+    //         href={item.href}
+    //         className="flex min-w-0 flex-col items-center justify-center gap-1 px-0.5 py-2 transition-colors hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-offset-[-3px] focus-visible:outline-white"
+    //       >
+    //         <NavIcon name={item.icon} />
+    //         <span className="whitespace-nowrap font-cormorant-garamond text-[9px] font-semibold leading-none sm:text-[10px] p-2 hover:bg-[#FED4884D] mt-1 text-[#4A3525]">
+    //           {item.label}
+    //         </span>
+    //       </a>
+    //     ))}
+    //   </div>
+    // </nav>
+
+
+       <nav
       aria-label="Page sections"
-      className="fixed inset-x-0 bottom-0 z-60 border-t border-white/20 bg-[#B35800] pb-[env(safe-area-inset-bottom)] text-[#F6EFE2] shadow-[0_-4px_18px_rgba(0,0,0,0.2)] rounded-tl-2xl rounded-tr-2xl"
+      className="fixed inset-x-0 bottom-0 z-60 border-t border-[#C5A05940] bg-[#FAF5EBF2] pb-[env(safe-area-inset-bottom)] text-[#4A3525] shadow-[0_-4px_18px_rgba(0,0,0,0.2)] rounded-tl-2xl rounded-tr-2xl"
     >
-      <div className="mx-auto grid min-h-16 max-w-3xl grid-cols-6">
+      <div className=" grid min-h-16 max-w-3xl grid-cols-6 border  border-[#C5A05940] rounded-2xl m-1 md:mx-auto">
         {items.map((item) => (
           <a
             key={item.href}
             href={item.href}
-            className="flex min-w-0 flex-col items-center justify-center gap-1 px-0.5 py-2 transition-colors hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-offset-[-3px] focus-visible:outline-white"
+            className="flex min-w-0 flex-col items-center justify-center gap-1 px-0.5 py-2 transition-colors duration-200 hover:bg-[#FED4884D] focus-visible:outline-2 focus-visible:outline-offset-[-3px] focus-visible:outline-[#B88E3F]"
           >
             <NavIcon name={item.icon} />
+
             <span className="whitespace-nowrap font-cormorant-garamond text-[9px] font-semibold leading-none sm:text-[10px] mt-1">
               {item.label}
             </span>
