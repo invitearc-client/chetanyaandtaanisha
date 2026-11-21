@@ -17,7 +17,7 @@ export default function LadkiSecondDetails() {
       )}
       <LadkiWardrobe />
 
-      <div className="md:w-1/3 lg:w-1/5 w-2/3 min-h-[420px] md:min-h-[420px]  lg:min-h-[480px] 3xl:min-h-[600px]  bg-[url('/assets/rsvp_bg.webp')] bg-contain bg-center bg-no-repeat flex flex-col items-center justify-center px-4 py-12">
+      <div id="rsvp" className="md:w-1/3 lg:w-1/5 w-2/3 min-h-[420px] md:min-h-[420px]  lg:min-h-[480px] 3xl:min-h-[600px]  bg-[url('/assets/rsvp_bg.webp')] bg-contain bg-center bg-no-repeat flex flex-col items-center justify-center px-4 py-12">
         <h2 className="text-[22px] md:text-3xl lg:text-[30px] text-center text-[#775A19] px-6 md:px-8 leading-6 md:leading-8 jacques-francois-regular">
           Awaiting the Pleasure of Your Company
         </h2>
