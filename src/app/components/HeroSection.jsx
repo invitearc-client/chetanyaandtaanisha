@@ -15,24 +15,27 @@ export default function HeroSection({ onSideChange }) {
   };
 
   return (
-   <section id="home" className="relative flex min-h-screen w-full flex-col overflow-x-clip">
-  {/* BACKGROUND */}
-<div
-  className="
+    <section
+      id="home"
+      className="relative flex min-h-screen w-full flex-col overflow-x-clip"
+    >
+      {/* BACKGROUND */}
+      <div
+        className="
     absolute inset-0 z-0 w-full
     bg-[#faf4e8]
     bg-[url('/assets/stock_mobile_bg3.webp')]
-    lg:bg-[url('/assets/stock_bg.webp')]
+    lg:bg-[url('/assets/stock_bg2.webp')]
     bg-top bg-no-repeat
     bg-[length:100%_auto]
   "
-/>
+      />
       <div className="pointer-events-none fixed inset-0 z-20 h-screen w-screen">
         <RoseHeroTemp />
       </div>
       {/* ================= CONTENT ================= */}
 
-       <div className="relative z-10 flex w-full flex-1 flex-col items-center  pt-10  sm:px-8 md:px-2 lg:px-6">
+      <div className="relative z-10 flex w-full flex-1 flex-col items-center  pt-10  sm:px-8 md:px-2 lg:px-6">
         {/* ================= GANESH ================= */}
         <div className="mt-4 flex justify-center md:mt-4 lg:mt-8">
           <img
@@ -41,7 +44,7 @@ export default function HeroSection({ onSideChange }) {
             className="w-[65px] sm:w-[65px] md:w-[90px] lg:w-[150px]"
           />
         </div>
-  {/* <p className="text-[17px] md:text-2xl text-[#000] font-cormorant-garamond">
+        {/* <p className="text-[17px] md:text-2xl text-[#000] font-cormorant-garamond">
         Smt. Shashi Gupta w/o Late Shri Jugal Kishore Gupta and Smt. Neelam Malhotra w/o Late Shri Ravinder Kumar Malhotra
       </p> */}
         {/* ================= WEDDING LOGO ================= */}
@@ -72,26 +75,26 @@ export default function HeroSection({ onSideChange }) {
   ${selectedSide === "ladke" ? "scale-105 shadow-lg" : ""}
 `}
           >
- <img
-            src="/assets/ladke_icon.png"
-            alt="Mata Image"
-            className="w-5 shrink-0"
-          />
+            <img
+              src="/assets/ladke_icon.png"
+              alt="Mata Image"
+              className="w-5 shrink-0"
+            />
 
-             <span className="flex-1 text-center font-cormorant-garamond font-semibold tracking-wide pl-1">
-    LADKE WAALE
-  </span>
+            <span className="flex-1 text-center font-cormorant-garamond font-semibold tracking-wide pl-1">
+              LADKE WAALE
+            </span>
 
-  {/* Right Arrow */}
-  <svg
-    className="h-4 w-4 shrink-0 text-[#9B782F]"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-  >
-    <path d="m9 5 7 7-7 7" />
-  </svg>
+            {/* Right Arrow */}
+            <svg
+              className="h-4 w-4 shrink-0 text-[#9B782F]"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+            >
+              <path d="m9 5 7 7-7 7" />
+            </svg>
           </button>
 
           {/* LADKI */}
@@ -111,25 +114,24 @@ export default function HeroSection({ onSideChange }) {
   ${selectedSide === "ladki" ? "scale-105 shadow-lg" : ""}
 `}
           >
-           <img
-            src="/assets/ladki.png"
-            alt="Mata Image"
-            className="w-5 shrink-0"
-          />
-          <span className="flex-1 text-center font-cormorant-garamond font-semibold tracking-wide pl-1">
-    LADKI WAALE
-  </span>
+            <img
+              src="/assets/ladki.png"
+              alt="Mata Image"
+              className="w-5 shrink-0"
+            />
+            <span className="flex-1 text-center font-cormorant-garamond font-semibold tracking-wide pl-1">
+              LADKI WAALE
+            </span>
 
-
-  <svg
-    className="h-4 w-4 shrink-0 text-[#9B782F]"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-  >
-    <path d="m9 5 7 7-7 7" />
-  </svg>
+            <svg
+              className="h-4 w-4 shrink-0 text-[#9B782F]"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+            >
+              <path d="m9 5 7 7-7 7" />
+            </svg>
           </button>
         </div>
         {/* ================= CHOOSE TEXT ================= */}
@@ -147,12 +149,6 @@ export default function HeroSection({ onSideChange }) {
         )}
       </div>
       {selectedSide && <BottomNavigation />}
-
-
-
-
     </section>
-
-    
   );
 }
