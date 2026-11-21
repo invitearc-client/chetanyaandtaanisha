@@ -19,7 +19,7 @@ export default function LadkeDetails() {
           would like to cordially invite you to the Wedding of their grandson,
         </p>
         <div className="mt-8 text-center">
-          <h2 className="text-[#F6F0E4] tangerine-regular text-center mt-14 md:text-4xl text-[38px] lg:text-[60px] leading-tight font-bold">
+          <h2 className="text-[#F6F0E4] italianno-regular text-center mt-14 md:text-4xl text-[38px] lg:text-[60px] leading-tight">
             CHETANYA
           </h2>
 
@@ -27,7 +27,7 @@ export default function LadkeDetails() {
             (Son of Mrs. Jyoti & Mr. Sanjay Koti)
           </p>
 
-          <h2 className="text-[#F6F0E4] text-center text-[38px] sm:text-7xl lg:text-[60px] leading-tight font-bold tangerine-regular">
+          <h2 className="text-[#F6F0E4] text-center text-[38px] sm:text-7xl lg:text-[60px] leading-tight italianno-regular">
             <span className="text-[#F6F0E4] font-cormorant-garamond text-center md:text-3xl text-[28px] lg:text-[36px] leading-tight font-medium">
               Weds
             </span>

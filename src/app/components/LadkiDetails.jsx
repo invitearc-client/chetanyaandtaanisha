@@ -19,7 +19,7 @@ export default function LadkiDetails() {
           granddaughter,
         </p>
         <div className="mt-8 text-center">
-          <h2 className="text-[#F6F0E4] font-bold tangerine-regular text-center mt-14 md:text-4xl text-[38px] lg:text-[60px] leading-tight">
+          <h2 className="text-[#F6F0E4] italianno-regular text-center mt-14 md:text-4xl text-[38px] lg:text-[60px] leading-tight">
             TAANISHA
           </h2>
 
@@ -27,7 +27,7 @@ export default function LadkiDetails() {
             (Daughter of Mrs. Shweta and Mr. Amit Gupta )
           </p>
 
-          <h2 className="text-[#F6F0E4] font-bold tangerine-regular text-center text-[38px] sm:text-7xl lg:text-[60px] leading-tight">
+          <h2 className="text-[#F6F0E4] italianno-regular text-center text-[38px] sm:text-7xl lg:text-[60px] leading-tight">
             <span className="text-[#F6F0E4] font-cormorant-garamond text-center md:text-3xl text-[28px] lg:text-[36px] leading-tight font-medium">
               Weds
             </span>

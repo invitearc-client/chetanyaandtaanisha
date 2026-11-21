@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap');
 @import "tailwindcss";
@@ -49,7 +49,10 @@ body {
 .cinzel{
   font-family: "Cinzel", serif;}
 
+.italianno-regular {
+  font-family: "Italianno", cursive;}
 
+  
 .jacques-francois-regular{
   font-family: "Jacques Francois", serif;}
 
