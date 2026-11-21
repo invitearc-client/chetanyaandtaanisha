@@ -1,12 +1,6 @@
 "use client";
-import { useState } from "react";
 import LadkaSecondDetails from "../components/LadkaSecondDetails";
-
 import Events from "../components/Events";
-// import Wardrobe from "../components/Wardrobe";
-
-import Weather from "../components/Weather";
-import Venues from "../components/Venues";
 
 export default function LadkeDetails() {
   return (
@@ -17,12 +11,12 @@ export default function LadkeDetails() {
         </p>
         <br />
         <p className="text-[17px] md:text-2xl text-[#F6F0E4] font-cormorant-garamond">
-          Late Shri. J.R Koti & Late Smt. Mato Bai Koti<br /> and <br />
+          Late Shri. J.R Koti & Late Smt. Mato Bai Koti
+          <br /> and <br />
           Late Smt. Prem Khurana & Shri. Ram Dayal Khurana
         </p>
         <p className="text-[17px] md:text-2xl text-[#F6F0E4] font-cormorant-garamond mt-4">
-          would like to cordially invite you to the Wedding of their
-          grandson,
+          would like to cordially invite you to the Wedding of their grandson,
         </p>
         <div className="mt-8 text-center">
           <h2 className="text-[#F6F0E4] cinzel text-center mt-14 md:text-4xl text-[38px] lg:text-[60px] leading-tight">
@@ -55,11 +49,6 @@ export default function LadkeDetails() {
       />
 
       <LadkaSecondDetails />
-
-      {/* <Wardrobe /> */}
-      {/*  
-        <Weather />
-        <Venues /> */}
     </>
   );
 }

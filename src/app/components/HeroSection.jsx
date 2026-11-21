@@ -5,8 +5,14 @@ import LadkeDetails from "../components/LadkeDetails";
 import LadkiDetails from "../components/LadkiDetails";
 import RoseHeroTemp from "../components/RoseHeroTemp";
 import BottomNavigation from "../components/BottomNavigation";
-export default function HeroSection() {
+export default function HeroSection({ onSideChange }) {
   const [selectedSide, setSelectedSide] = useState(null);
+
+  const selectSide = (side, event) => {
+    event.stopPropagation();
+    setSelectedSide(side);
+    onSideChange?.(side);
+  };
 
   return (
    <section id="home" className="relative flex min-h-screen w-full flex-col overflow-x-clip">
@@ -48,11 +54,12 @@ export default function HeroSection() {
         </div>
 
         {/* ================= BUTTONS ================= */}
-        <div className="mt-80 flex w-full max-w-[500px]  items-center justify-center md:gap-4 flex-row md:mt-160 lg:mt-180 3xl:mt-250">
+        <div className="mt-80 flex w-full max-w-[500px]  items-center justify-center  md:gap-4 flex-row md:mt-160 lg:mt-180 3xl:mt-250">
           {/* LADKE */}
           <button
             type="button"
-            onClick={() => setSelectedSide("ladke")}
+            data-side-song
+            onClick={(event) => selectSide("ladke", event)}
             className={`
   w-full max-w-[220px] px-8 py-3
   text-xs tracking-[0.12em] text-[#2B1A12] font-semibold
@@ -71,7 +78,8 @@ export default function HeroSection() {
           {/* LADKI */}
           <button
             type="button"
-            onClick={() => setSelectedSide("ladki")}
+            data-side-song
+            onClick={(event) => selectSide("ladki", event)}
             className={`
   w-full max-w-[220px] px-8 py-3
   text-xs tracking-[0.12em] text-[#2B1A12] font-semibold
@@ -81,7 +89,7 @@ export default function HeroSection() {
   bg-[url('/assets/button_bg.png')]
   bg-contain bg-center bg-no-repeat
   hover:scale-105
-  ${selectedSide === "ladke" ? "scale-105 shadow-lg" : ""}
+  ${selectedSide === "ladki" ? "scale-105 shadow-lg" : ""}
 `}
           >
             LADKI WAALE

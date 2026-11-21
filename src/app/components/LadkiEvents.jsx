@@ -13,8 +13,8 @@ export default function LadkiEvents() {
 
       <div className="grid w-full min-w-0 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-12 gap-12 md:gap-8 pt-10 md:px-10">
 
-        {/* Mata ki Chowki */}
-        {/* <div className="relative w-full min-h-119 md:min-h-119 lg:min-h-129 flex flex-col bg-[url('/assets/event_bg.webp')] rounded-2xl px-5  md:px-8 bg-no-repeat bg-center bg-[length:100%_100%] justify-center items-center text-center">
+        {/* Kirtan */}
+        <div className="relative w-full min-h-119 md:min-h-119 lg:min-h-129 flex flex-col bg-[url('/assets/event_bg.webp')] rounded-2xl px-5  md:px-8 bg-no-repeat bg-center bg-[length:100%_100%] justify-center items-center text-center">
           <img
             src="/assets/mata_img.png"
             alt="Mata Image"
@@ -22,15 +22,15 @@ export default function LadkiEvents() {
           />
 
           <h2 className="text-[#775A19] jacques-francois-regular text-[26px] md:text-[25px] lg:text-[30px] mt-2">
-            Mata ki Chowki
+            Kirtan
           </h2>
 
           <p className="text-[#775A19] jacques-francois-regular text-[18px] md:text-[17px] lg:text-xl mt-1">
-            26th January 2027
+            15th January 2027
           </p>
 
           <p className="text-[#775A19] jacques-francois-regular text-[15px] md:text-[14px] lg:text-[15px]">
-            10:00 AM Onwards
+            6:30 PM Onwards
           </p>
 
           <img
@@ -39,26 +39,21 @@ export default function LadkiEvents() {
             className="w-[140px] md:w-[180px] py-3 shrink-0"
           />
 
-          <p className="text-[#775A19] jacques-francois-regular text-sm md:text-sm lg:text-base px-4 md:px-0 leading-5 max-w-[650px]">
-            Join us for an afternoon of prayers, bhajan & dance, as we seek
-            divine blessings of MataRani to commence the Wedding Celebration of
-            Chetanya & Taanisha
-          </p>
 
           <div className="w-[200px] border-b border-[#E8D1AF] my-3" />
 
           <p className="text-[#775A19] jacques-francois-regular text-sm  md:text-[13px] lg:text-[15px] mt-2">
-            CHOWKI VENUE
+            KIRTAN VENUE
           </p>
 
           <p className="text-[#775A19] jacques-francois-regular text-xl md:text-[18px] lg:text-xl mt-1">
-            GNH Conventions
+            Golden Royale
           </p>
 
           <p className="text-[#775A19] jacques-francois-regular text-sm md:text-[13px] lg:text-base mt-1">
-            Sohna Road, Gurugram
+            Rose Bagh, Moti Nagar, Delhi
           </p>
-        </div> */}
+        </div>
 
         {/* Mehendi ki Mehfil */}
         <div className="relative w-full min-h-119 md:min-h-119 lg:min-h-129 flex flex-col bg-[url('/assets/event_bg.webp')] rounded-2xl px-5  md:px-8 bg-no-repeat bg-center bg-[length:100%_100%] justify-center items-center text-center">
@@ -272,9 +267,7 @@ export default function LadkiEvents() {
             </div>
           </div>
 
-          {/* <p className="text-[#775A19] jacques-francois-regular text-sm  md:text-[13px] lg:text-[15px] mt-2">
-            CHOWKI VENUE
-          </p> */}
+       
 
           <p className="text-[#775A19] jacques-francois-regular text-sm md:text-[18px] lg:text-xl mt-1">
             Umaid Palace
