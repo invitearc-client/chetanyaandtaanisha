@@ -14,12 +14,12 @@ const geistMono = Geist_Mono({
 
 
 export const metadata= {
-  metadataBase: new URL("https://chetanyaandtaanisha.vercel.app/"),
+  metadataBase: new URL("https://chetanyaandtaanisha-v1.vercel.app/"),
 
   openGraph: {
     title: "Chetanya & Taanisha",
     description: "Join us for a little tradition, a lot of love, and a lifetime of memories.",
-    url: "https://chetanyaandtaanisha.vercel.app/",
+    url: "https://chetanyaandtaanisha-v1.vercel.app/",
     siteName: "InviteArc",
     images: [
       {
@@ -41,7 +41,7 @@ export const metadata= {
   },
 
  other: {
-    "og:image:secure_url": "https://chetanyaandtaanisha.vercel.app/og.jpg",
+    "og:image:secure_url": "https://chetanyaandtaanisha-v1.vercel.app/og.jpg",
     "og:image:type": "image/jpg",
   },
 };
