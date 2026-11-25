@@ -55,30 +55,30 @@ export default function MarriageCountdown() {
       </h2>
 
       {/* <div className="w-full max-w-[1000px] mx-auto bg-[url('/assets/countdown-bg.png')] bg-no-repeat bg-center bg-[length:80%_100%] md:bg-[length:100%_100%] aspect-[527/159] min-h-[145px] relative"> */}
-<div className="w-full md:w-160 max-w-[1200px] lg:max-w-[1800px] mx-auto bg-[url('/assets/countdown-bg.png')] bg-no-repeat bg-center bg-[length:80%_100%] md:bg-[length:100%_100%] aspect-[527/159] min-h-[145px] relative">
+<div className="w-full md:w-160 max-w-[1200px] lg:max-w-[1800px] mx-auto bg-[url('/assets/countdown-bg.png')] bg-no-repeat bg-center bg-[length:80%_100%] md:bg-[length:100%_100%] aspect-[527/159] md:min-h-[145px] min-h-[140px] relative">
         {/* Days */}
-        <div className="absolute md:left-[17.5%] left-[24%] md:top-[20%] top-[24%] -translate-x-1/2 flex items-center justify-center w-[18%]">
+        <div className="absolute md:left-[17.5%] left-[24%] md:top-[20%] top-[22%] -translate-x-1/2 flex items-center justify-center w-[18%]">
           <span className="font-cormorant-garamond text-[#775A19] text-[22px] sm:text-3xl md:text-4xl lg:text-[30px] leading-none tabular-nums">
             {timeLeft.days}
           </span>
         </div>
 
         {/* Hours */}
-        <div className="absolute md:left-[39%] left-[41%] md:top-[20%] top-[24%] -translate-x-1/2 flex items-center justify-center w-[18%]">
+        <div className="absolute md:left-[39%] left-[41%] md:top-[20%] top-[22%] -translate-x-1/2 flex items-center justify-center w-[18%]">
           <span className="font-cormorant-garamond text-[#775A19] text-[22px] sm:text-3xl md:text-4xl lg:text-[30px] leading-none tabular-nums">
             {timeLeft.hours}
           </span>
         </div>
 
         {/* Minutes */}
-        <div className="absolute md:left-[60%] left-[58%] md:top-[20%] top-[24%] -translate-x-1/2 flex items-center justify-center w-[18%]">
+        <div className="absolute md:left-[60%] left-[58%] md:top-[20%] top-[22%] -translate-x-1/2 flex items-center justify-center w-[18%]">
           <span className="font-cormorant-garamond text-[#775A19] text-[22px] sm:text-3xl md:text-4xl lg:text-[30px] leading-none tabular-nums">
             {timeLeft.minutes}
           </span>
         </div>
 
         {/* Seconds */}
-        <div className="absolute left-[76%] md:left-[82%] md:top-[20%] top-[24%] -translate-x-1/2 flex items-center justify-center w-[18%]">
+        <div className="absolute left-[76%] md:left-[82%] md:top-[20%] top-[22%] -translate-x-1/2 flex items-center justify-center w-[18%]">
           <span className="font-cormorant-garamond text-[#775A19] text-[22px] sm:text-3xl md:text-4xl lg:text-[30px] leading-none tabular-nums">
             {timeLeft.seconds}
           </span>

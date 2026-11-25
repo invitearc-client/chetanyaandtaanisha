@@ -27,14 +27,14 @@ export default function Weather() {
         
         <div className="flex flex-wrap justify-center gap-x-6 gap-y-8 max-w-3xl mx-auto mt-8">
           {[
-              {
-              day: "Sunday",
-              date: "31",
-              month: "JAN 2027",
-              temp: "26°C",
-              weather: "12°",
-              icon: "/assets/sun2.webp",
-            },
+            //   {
+            //   day: "Sunday",
+            //   date: "31",
+            //   month: "JAN 2027",
+            //   temp: "26°C",
+            //   weather: "12°",
+            //   icon: "/assets/sun2.webp",
+            // },
           
             {
               day: "Monday",
@@ -64,7 +64,7 @@ export default function Weather() {
          
             <div
               key={index}
-              className="flex flex-col items-center justify-center text-[#775A19] w-[calc(22%-1rem)] md:w-[calc(20%-1.5rem)]"
+              className="flex flex-col items-center justify-center text-[#775A19] w-[calc(30%-1rem)] md:w-[calc(20%-1.5rem)]"
             >
               <p className="text-[10px] md:text-[14px] tracking-[3px]">
                 {item.day}
