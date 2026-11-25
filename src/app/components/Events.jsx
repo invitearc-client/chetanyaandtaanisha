@@ -58,6 +58,15 @@ export default function Events() {
           <p className="text-[#775A19] jacques-francois-regular text-sm md:text-[13px] lg:text-base mt-1">
             Sohna Road, Gurugram
           </p>
+
+           <a
+            href="https://maps.app.goo.gl/nnpDWWuXd3ug8m6F7"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline underline-offset-2 text-[#775A19] jacques-francois-regular text-sm"
+          >
+           View Location
+          </a>
         </div>
 
         {/* Mehendi ki Mehfil */}
@@ -121,7 +130,7 @@ export default function Events() {
           </p>
 
           <p className="text-[#775A19] jacques-francois-regular text-[15px] md:text-[14px] lg:text-[15px]">
-            11AM to 2:30PM
+            11:00 AM to 2:30 PM
           </p>
 
           <img
@@ -150,6 +159,14 @@ export default function Events() {
             Jaipur-Agra National Highway <br />
             Dausa, Rajasthan
           </p>
+           <a
+            href="https://maps.app.goo.gl/Tc7AAZ35P2cVEn6y6"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline underline-offset-2 text-[#775A19] jacques-francois-regular text-sm"
+          >
+           View Location
+          </a>
         </div>
 
         {/* Jashn e Sagan */}
@@ -169,7 +186,7 @@ export default function Events() {
           </p>
 
           <p className="text-[#775A19] jacques-francois-regular text-[15px] md:text-[14px] lg:text-[15px]">
-            7PM Onwards
+            7:00 PM Onwards
           </p>
 
           <img
@@ -194,18 +211,28 @@ export default function Events() {
             Jaipur-Agra National Highway <br />
             Dausa, Rajasthan
           </p>
+
+
+           <a
+            href="https://maps.app.goo.gl/Tc7AAZ35P2cVEn6y6"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline underline-offset-2 text-[#775A19] jacques-francois-regular text-sm"
+          >
+           View Location
+          </a>
         </div>
 
         {/* Din Shagna Da */}
 
-        <div className="relative w-full min-h-130 md:min-h-135 lg:min-h-145 3xl:min-h-140  flex flex-col bg-[url('/assets/event_bg.webp')] rounded-2xl px-5  md:px-8 bg-no-repeat bg-center bg-[length:100%_100%] justify-center items-center text-center">
+        <div className="relative w-full min-h-140 md:min-h-150 lg:min-h-145 3xl:min-h-145  flex flex-col bg-[url('/assets/event_bg.webp')] rounded-2xl px-5  md:px-8 bg-no-repeat bg-center bg-[length:100%_100%] justify-center items-center text-center">
           <img
             src="/assets/din.png"
             alt="Mata Image"
             className="w-[60px] shrink-0 mt-10"
           />
 
-          <h2 className="text-[#775A19] jacques-francois-regular text-[26px] md:text-[25px] lg:text-[30px] mt-2">
+          <h2 className="text-[#775A19] jacques-francois-regular text-[26px] md:text-[25px] lg:text-[25px] mt-2">
             Din Shagna Da
           </h2>
 
@@ -230,7 +257,7 @@ export default function Events() {
                 </p>
               </div>
               <p className="font-cormorant-garamond text-[#805719] text-[14px] tracking-[3px]">
-                08 AM
+                8:00 AM
               </p>
             </div>
 
@@ -244,7 +271,7 @@ export default function Events() {
                 </p>
               </div>
               <p className="font-cormorant-garamond text-[#805719] text-[14px] tracking-[3px]">
-                10 AM
+                10:00 AM
               </p>
             </div>
 
@@ -258,7 +285,7 @@ export default function Events() {
                 </p>
               </div>
               <p className="font-cormorant-garamond text-[#805719] text-[14px] tracking-[3px]">
-                12 PM
+                12:00 PM
               </p>
             </div>
 
@@ -272,7 +299,7 @@ export default function Events() {
                 </p>
               </div>
               <p className="font-cormorant-garamond text-[#805719] text-[14px] tracking-[3px]">
-                03 PM
+                3:00 PM
               </p>
             </div>
           </div>
@@ -289,6 +316,14 @@ export default function Events() {
             Jaipur-Agra National Highway <br />
             Dausa, Rajasthan
           </p>
+           <a
+            href="https://maps.app.goo.gl/Tc7AAZ35P2cVEn6y6"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline underline-offset-2 text-[#775A19] jacques-francois-regular text-sm"
+          >
+           View Location
+          </a>
         </div>
 
         {/* The Final Bet */}
@@ -308,7 +343,7 @@ export default function Events() {
           </p>
 
           <p className="text-[#775A19] jacques-francois-regular text-[15px] md:text-[14px] lg:text-[15px]">
-            8PM Onwards
+            8:00 PM Onwards
           </p>
 
           <img
@@ -331,6 +366,14 @@ export default function Events() {
             Jaipur-Agra National Highway <br />
             Dausa, Rajasthan
           </p>
+           <a
+            href="https://maps.app.goo.gl/Tc7AAZ35P2cVEn6y6"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline underline-offset-2 text-[#775A19] jacques-francois-regular text-sm"
+          >
+           View Location
+          </a>
         </div>
 
         {/* Vidaai */}
@@ -354,7 +397,7 @@ export default function Events() {
           </p>
 
           <p className="text-[#775A19] jacques-francois-regular text-[15px] md:text-[14px] lg:text-[15px]">
-            8am Onwards
+            8:00 AM Onwards
           </p>
 
           <img
@@ -365,8 +408,8 @@ export default function Events() {
 
           <div className="w-[200px] border-b border-[#E8D1AF] my-3" />
 
-          <p className="text-[#775A19] jacques-francois-regular text-sm  md:text-[13px] lg:text-[15px] mt-2">
-            VIDAAI VENUE
+           <p className="text-[#775A19] jacques-francois-regular text-sm  md:text-[13px] lg:text-[15px] mt-2 uppercase">
+            Front lawns
           </p>
 
            <p className="text-[#775A19] jacques-francois-regular text-xl md:text-[18px] lg:text-xl mt-1">
@@ -377,7 +420,14 @@ export default function Events() {
             Jaipur-Agra National Highway <br />
             Dausa, Rajasthan
           </p>
-       
+        <a
+            href="https://maps.app.goo.gl/Tc7AAZ35P2cVEn6y6"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline underline-offset-2 text-[#775A19] jacques-francois-regular text-sm"
+          >
+           View Location
+          </a>
        </div>
       </div>
 

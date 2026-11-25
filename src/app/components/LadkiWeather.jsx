@@ -18,7 +18,7 @@ export default function LadkiWeather() {
         <div className="w-20 h-[1px] bg-[#B58A42] mx-auto mt-2 mb-4"></div>
 
         <p className="jacques-francois-regular text-sm md:text-[20px] text-[#775A19] max-w-md mx-auto">
-          January and February brings sunny days, pleasant afternoons and cool
+          January and February bring sunny days, pleasant afternoons and cool
           desert evenings.
         </p>
 
@@ -27,50 +27,43 @@ export default function LadkiWeather() {
         <div className="flex flex-wrap justify-center gap-x-6 gap-y-8 max-w-3xl mx-auto mt-8">
           {[
               {
-              day: "Tuesday",
-              date: "26",
+              day: "Sunday",
+              date: "31",
               month: "JAN 2027",
-              temp: "31°C",
-              weather: "Sunny & Pleasant",
-              icon: "/assets/weather_icon.png",
+              temp: "26°C",
+              weather: "12°",
+              icon: "/assets/sun2.webp",
             },
-            {
-              day: "SATURDAY",
-              date: "30",
-              month: "JAN 2027",
-              temp: "30°C",
-              weather: "Clear Skies",
-              icon: "/assets/weather_icon2.png",
-            },
+          
             {
               day: "Monday",
               date: "01",
               month: "FEB 2027",
-              temp: "31°C",
-              weather: "Sunny & Pleasant",
-              icon: "/assets/weather_icon.png",
+              temp: "26°C",
+              weather: "10°",
+              icon: "/assets/sun1.webp",
             },
             {
               day: "Tuesday",
               date: "02",
               month: "FEB 2027",
-              temp: "30°C",
-              weather: "Clear Skies",
-              icon: "/assets/weather_icon2.png",
+              temp: "26°C",
+              weather: "10°",
+              icon: "/assets/sun2.webp",
             },
             {
               day: "Wednesday",
               date: "03",
               month: "FEB 2027",
-              temp: "30°C",
-              weather: "Clear Skies",
-              icon: "/assets/weather_icon.png",
+              temp: "26°C",
+              weather: "10°",
+              icon: "/assets/sun2.webp",
             },
           ].map((item, index) => (
          
             <div
               key={index}
-              className="flex flex-col items-center justify-center text-[#775A19] w-[calc(33.333%-1rem)] md:w-[calc(20%-1.5rem)]"
+              className="flex flex-col items-center justify-center text-[#775A19] w-[calc(22%-1rem)] md:w-[calc(20%-1.5rem)]"
             >
               <p className="text-[10px] md:text-[14px] tracking-[3px]">
                 {item.day}
@@ -87,7 +80,7 @@ export default function LadkiWeather() {
                 {item.temp}
               </h3>
 
-              <p className="text-[10px] md:text-[14px]  mt-1">{item.weather}</p>
+              <p className="text-[#ad945e] text-xl md:text-2xl  mt-1">{item.weather}</p>
             </div>
           ))}
         </div>
@@ -109,10 +102,12 @@ export default function LadkiWeather() {
           <div className="text-2xl mt-3">♥</div>
 
           <p className="jacques-francois-regular text-sm md:text-2xl mt-3">
-            With love
+            With love,
           </p>
-
-          <h2 className="parisienne-regular  text-2xl md:text-5xl mt-4 font-semibold">
+   <h2 className="parisienne-regular  text-xl md:text-2xl mt-4 font-semibold">
+       ॐ साईं राम
+          </h2>
+          <h2 className="parisienne-regular  text-2xl md:text-5xl mt-2 font-semibold">
            The Aggarwals, Guptas & Malhotras
           </h2>
 

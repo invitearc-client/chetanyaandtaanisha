@@ -18,7 +18,7 @@ export const metadata= {
 
   openGraph: {
     title: "Chetanya & Taanisha",
-    description: "Join as they begin their forever.",
+    description: "Join us for a little tradition, a lot of love, and a lifetime of memories.",
     url: "https://chetanyaandtaanisha.vercel.app/",
     siteName: "InviteArc",
     images: [
@@ -36,7 +36,7 @@ export const metadata= {
   twitter: {
     card: "summary_large_image",
     title: "Chetanya & Taanisha",
-    description: "Join as they begin their forever.",
+    description: "Join us for a little tradition, a lot of love, and a lifetime of memories.",
     images: ["/og.jpg"],
   },
 

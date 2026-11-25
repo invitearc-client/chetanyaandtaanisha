@@ -3,7 +3,7 @@
 
 import { useEffect, useState, useRef } from "react";
 import HeroSection from "./components/HeroSection";
-
+import IntroVideo from "./components/IntroVideo";
 export default function Home() {
   const audioRef = useRef(null);
   const startedRef = useRef(false);
@@ -112,7 +112,7 @@ export default function Home() {
         preload="auto"
         playsInline
       />
-
+<IntroVideo onFinish={() => setIntroDone(true)} />
       <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
         <HeroSection onSideChange={changeSong} />
       </div>

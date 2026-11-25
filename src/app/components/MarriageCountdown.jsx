@@ -1,86 +1,91 @@
+
 "use client";
 import { useEffect, useState } from "react";
 
-
 export default function MarriageCountdown() {
-    const TARGET_DATE = new Date("2027-02-02").getTime();
+  const TARGET_DATE = new Date("2027-02-02").getTime();
+
   const [timeLeft, setTimeLeft] = useState({
-  days: 14,
-  hours: 12,
-  minutes: 28,
-  seconds: 0, 
-});
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+  });
 
-useEffect(() => {
-  const updateCountdown = () => {
-    const now = new Date().getTime();
-    const diff = TARGET_DATE - now;
+  useEffect(() => {
+    const updateCountdown = () => {
+      const now = new Date().getTime();
+      const diff = TARGET_DATE - now;
 
-    if (diff <= 0) {
+      if (diff <= 0) {
+        setTimeLeft({
+          days: 0,
+          hours: 0,
+          minutes: 0,
+          seconds: 0,
+        });
+        return;
+      }
+
       setTimeLeft({
-        days: 0,
-        hours: 0,
-        minutes: 0,
-        seconds: 0,
+        days: Math.floor(diff / (1000 * 60 * 60 * 24)),
+        hours: Math.floor(
+          (diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        ),
+        minutes: Math.floor(
+          (diff % (1000 * 60 * 60)) / (1000 * 60)
+        ),
+        seconds: Math.floor(
+          (diff % (1000 * 60)) / 1000
+        ),
       });
-      return;
-    }
+    };
 
-    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    updateCountdown();
+    const interval = setInterval(updateCountdown, 1000);
 
-    const hours = Math.floor(
-      (diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-    );
+    return () => clearInterval(interval);
+  }, []);
 
-    const minutes = Math.floor(
-      (diff % (1000 * 60 * 60)) / (1000 * 60)
-    );
+  return (
+    <section className="w-full bg-[url('/assets/bg_four.webp')] bg-cover bg-center py-8">
 
-    const seconds = Math.floor(
-      (diff % (1000 * 60)) / 1000
-    );
+      <h2 className="text-[40px] md:text-5xl lg:text-[50px] text-center text-[#775A19] parisienne-regular mb-4">
+        Countdown
+      </h2>
 
-    setTimeLeft({
-      days,
-      hours,
-      minutes,
-      seconds,
-    });
-  };
+      {/* <div className="w-full max-w-[1000px] mx-auto bg-[url('/assets/countdown-bg.png')] bg-no-repeat bg-center bg-[length:80%_100%] md:bg-[length:100%_100%] aspect-[527/159] min-h-[145px] relative"> */}
+<div className="w-full md:w-160 max-w-[1200px] lg:max-w-[1800px] mx-auto bg-[url('/assets/countdown-bg.png')] bg-no-repeat bg-center bg-[length:80%_100%] md:bg-[length:100%_100%] aspect-[527/159] min-h-[145px] relative">
+        {/* Days */}
+        <div className="absolute md:left-[17.5%] left-[24%] md:top-[20%] top-[24%] -translate-x-1/2 flex items-center justify-center w-[18%]">
+          <span className="font-cormorant-garamond text-[#775A19] text-[22px] sm:text-3xl md:text-4xl lg:text-[30px] leading-none tabular-nums">
+            {timeLeft.days}
+          </span>
+        </div>
 
-  updateCountdown();
+        {/* Hours */}
+        <div className="absolute md:left-[39%] left-[41%] md:top-[20%] top-[24%] -translate-x-1/2 flex items-center justify-center w-[18%]">
+          <span className="font-cormorant-garamond text-[#775A19] text-[22px] sm:text-3xl md:text-4xl lg:text-[30px] leading-none tabular-nums">
+            {timeLeft.hours}
+          </span>
+        </div>
 
-  // Update every second
-  const interval = setInterval(updateCountdown, 1000);
+        {/* Minutes */}
+        <div className="absolute md:left-[60%] left-[58%] md:top-[20%] top-[24%] -translate-x-1/2 flex items-center justify-center w-[18%]">
+          <span className="font-cormorant-garamond text-[#775A19] text-[22px] sm:text-3xl md:text-4xl lg:text-[30px] leading-none tabular-nums">
+            {timeLeft.minutes}
+          </span>
+        </div>
 
-  return () => clearInterval(interval);
-}, []);
+        {/* Seconds */}
+        <div className="absolute left-[76%] md:left-[82%] md:top-[20%] top-[24%] -translate-x-1/2 flex items-center justify-center w-[18%]">
+          <span className="font-cormorant-garamond text-[#775A19] text-[22px] sm:text-3xl md:text-4xl lg:text-[30px] leading-none tabular-nums">
+            {timeLeft.seconds}
+          </span>
+        </div>
 
-    return (
-        <>
-            <div className="bg-[url('/assets/bg_four.webp')] bg-cover bg-no-repeat">
-               
-                    <h2 className="text-[40px] md:text-5xl lg:text-[50px] text-center text-[#775A19] pt-18 md:pt-11 lg:pt-10 3xl:pt-25 parisienne-regular">Countdown</h2> 
-                     
-                    <div className="flex md:gap-12 gap-2 justify-center items-center mt-6">
-                       <div className="border px-6 py-2 bg-[#F8F4EA] border-[#775A19] rounded-md">
-                         <h2 className="text-[30px] md:text-4xl lg:text-[52px] text-center text-[#775A19] font-cormorant-garamond"> {timeLeft.days}</h2>
-                          <h2 className="text-[10px] md:text-2xl lg:text-[15px] text-center text-black font-cormorant-garamond uppercase">Days </h2>
-                       </div>
-                        <div className="border px-6 py-2 bg-[#F8F4EA] border-[#775A19] rounded-md">
-                         <h2 className="text-[30px] md:text-4xl lg:text-[52px] text-center text-[#775A19] font-cormorant-garamond"> {timeLeft.hours}</h2>
-                          <h2 className="text-[10px] md:text-2xl lg:text-[15px] text-center text-black font-cormorant-garamond uppercase">Hours</h2>
-                       </div>
-                       <div className="border px-6 py-2 bg-[#F8F4EA] border-[#775A19] rounded-md">
-                         <h2 className="text-[30px] md:text-4xl lg:text-[52px] text-center text-[#775A19] font-cormorant-garamond"> {timeLeft.minutes}</h2>
-                          <h2 className="text-[10px] md:text-2xl lg:text-[15px] text-center text-black font-cormorant-garamond uppercase">Minutes</h2>
-                       </div>
-                       <div className="border px-6 py-2 bg-[#F8F4EA] border-[#775A19] rounded-md">
-                         <h2 className="text-[30px] md:text-4xl lg:text-[52px] text-center text-[#775A19] font-cormorant-garamond">{timeLeft.seconds}</h2>
-                          <h2 className="text-[10px] md:text-2xl lg:text-[15px] text-center text-black font-cormorant-garamond uppercase">Seconds</h2>
-                       </div>
-                    </div>
-            </div>
-        </>
-    );
-} 
+      </div>
+
+    </section>
+  );
+}
