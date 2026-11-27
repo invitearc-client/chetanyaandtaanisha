@@ -193,7 +193,7 @@ export default function LadkiWardrobe() {
               </svg>
             </button>
 
-            <div className="absolute bottom-1 left-0 right-0 flex justify-center lg:hidden pointer-events-none">
+            <div className="absolute bottom-1 left-0 right-0 flex justify-center pointer-events-none">
               <span className="text-[#775A19] text-xs tracking-[3px] font-medium animate-pulse">
                 ← SWIPE TO EXPLORE →
               </span>

@@ -1,20 +1,20 @@
 "use client";
 import { useState } from "react";
-import ScratchText from "../components/ScratchText"; 
+// import ScratchText from "../components/ScratchText"; 
 import MarriageCountdown from "../components/MarriageCountdown";
 import Wardrobe from "../components/Wardrobe";
 import Weather from "../components/Weather";
 export default function LadkaSecondDetails() {
-  const [revealed, setRevealed] = useState(false);
+  // const [revealed, setRevealed] = useState(false);
   return (
     <div className="relative left-1/2 flex w-screen max-w-none -translate-x-1/2 flex-col items-center text-center bg-[url('/assets/ladkadetailsection_bg.webp')] bg-cover bg-no-repeat pt-20 md:pt-30">
-      <ScratchText onReveal={() => setRevealed(true)} />
+      {/* <ScratchText onReveal={() => setRevealed(true)} />
 
       {revealed && (
         <div className="countdown-fade-in">
           <MarriageCountdown />
         </div>
-      )}
+      )} */}
       <Wardrobe />
 
       <div

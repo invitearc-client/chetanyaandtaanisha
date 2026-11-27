@@ -1,7 +1,23 @@
 "use client";
-
+import { useState } from "react";
+import ScratchText from "../components/ScratchText";
+import MarriageCountdown from "../components/MarriageCountdown";
 export default function LadkiEvents() {
+   const [revealed, setRevealed] = useState(false);
   return (
+    <>
+          <div className="mt-12 lg:mt-20 flex flex-col justify-center items-center">
+            <p className="text-[#F6F0E4] font-cormorant-garamond md:text-2xl text-[17px] mb-6 md:mb-10">
+              It would be our privilege to have you with us on this joyous occasion
+            </p>
+            <ScratchText onReveal={() => setRevealed(true)} />
+    
+            {revealed && (
+              <div className="countdown-fade-in">
+                <MarriageCountdown />
+              </div>
+            )}
+          </div>
     <div
       id="itinerary"
       className="flex w-full min-w-0 scroll-mt-6 flex-col justify-center mt-20 lg:mt-40 items-center  md:relative md:left-1/2 lg:w-[calc(90vw-3rem)] 3xl:w-[calc(75vw-3rem)] md:max-w-none md:-translate-x-1/2"
@@ -431,5 +447,6 @@ export default function LadkiEvents() {
         </div>
       </div>
     </div>
+    </>
   );
 }

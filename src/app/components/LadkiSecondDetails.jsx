@@ -1,20 +1,20 @@
 "use client";
 import { useState } from "react";
-import ScratchText from "../components/ScratchText";
-import MarriageCountdown from "../components/MarriageCountdown";
+// import ScratchText from "../components/ScratchText";
+// import MarriageCountdown from "../components/MarriageCountdown";
 import LadkiWardrobe from "../components/LadkiWardrobe";
 import LadkiWeather from "../components/LadkiWeather";
 export default function LadkiSecondDetails() {
-  const [revealed, setRevealed] = useState(false);
+  // const [revealed, setRevealed] = useState(false);
   return (
     <div className="relative left-1/2 flex w-screen max-w-none -translate-x-1/2 flex-col items-center text-center bg-[url('/assets/ladkadetailsection_bg.webp')] bg-cover bg-no-repeat pt-20 md:pt-30">
-      <ScratchText onReveal={() => setRevealed(true)} />
+      {/* <ScratchText onReveal={() => setRevealed(true)} />
 
       {revealed && (
         <div className="countdown-fade-in">
           <MarriageCountdown />
         </div>
-      )}
+      )} */}
       <LadkiWardrobe />
 
       <div id="rsvp" className="md:w-1/3 lg:w-1/5 w-2/3 min-h-[420px] md:min-h-[420px]  lg:min-h-[480px] 3xl:min-h-[600px]  bg-[url('/assets/rsvp_bg.webp')] bg-contain bg-center bg-no-repeat flex flex-col items-center justify-center px-4 py-12">

@@ -42,7 +42,7 @@ export default function MarriageCountdown() {
 
   return (
     <section className="w-full bg-[url('/assets/bg_four.webp')] bg-cover bg-center py-8">
-      <h2 className="text-[40px] md:text-5xl lg:text-[50px] text-center text-[#775A19] parisienne-regular mb-4">
+      <h2 className="text-[40px] md:text-5xl lg:text-[50px] text-center text-white parisienne-regular mb-4">
         Countdown
       </h2>
 
