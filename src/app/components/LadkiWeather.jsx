@@ -26,15 +26,7 @@ export default function LadkiWeather() {
 
         <div className="flex flex-wrap justify-center gap-x-6 gap-y-8 max-w-3xl mx-auto mt-8">
           {[
-            //   {
-            //   day: "Sunday",
-            //   date: "31",
-            //   month: "JAN 2027",
-            //   temp: "26°C",
-            //   weather: "12°",
-            //   icon: "/assets/sun2.webp",
-            // },
-
+         
             {
               day: "Monday",
               date: "01",
@@ -77,13 +69,27 @@ export default function LadkiWeather() {
               </p>
               <img src={item.icon} alt="Shree Ganesh" className="w-full py-2" />
 
-              <h3 className="font-cormorant-garamond text-2xl md:text-3xl lg:text-4xl">
-                {item.temp}
-              </h3>
+            <div className="flex flex-col-1 items-center justify-left">
+                <img
+                  src="/assets/sun2.webp"
+                  alt="Shree Ganesh"
+                  className="w-1/3 py-2"
+                />
+                <h3 className="font-cormorant-garamond text-2xl md:text-3xl lg:text-4xl">
+                  {item.temp}
+                </h3>
+              </div>
 
-              <p className="text-[#ad945e] text-xl md:text-2xl  mt-1">
-                {item.weather}
-              </p>
+              <div className="flex flex-col-1 items-center justify-left pl-2">
+                <img
+                  src="/assets/moon.png"
+                  alt="Shree Ganesh"
+                  className="w-1/3 py-2 pr-2"
+                />
+                <p className="text-[#ad945e] text-xl md:text-2xl  mt-1">
+                  {item.weather}
+                </p>
+              </div>
             </div>
           ))}
         </div>
