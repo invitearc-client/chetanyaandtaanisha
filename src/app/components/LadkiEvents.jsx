@@ -144,7 +144,7 @@ export default function LadkiEvents() {
           </p>
 
           <p className="text-[#775A19] jacques-francois-regular text-[15px] md:text-[14px] lg:text-[15px]">
-            11:00 AM
+            11:00 AM Onwards
           </p>
 
           <img
@@ -191,7 +191,7 @@ export default function LadkiEvents() {
             Jashn e Sagan
           </h2>
           <h2 className="text-[#775A19] jacques-francois-regular text-[14px] md:text-[16px] lg:text-[17px]">
-            (Sagan and Cocktail)
+            Sagan and Cocktail
           </h2>
           <p className="text-[#775A19] jacques-francois-regular text-[18px] md:text-[17px] lg:text-xl mt-1">
             1st Feb 2027
@@ -246,7 +246,7 @@ export default function LadkiEvents() {
             Din Shagna Da
           </h2>
           <h2 className="text-[#775A19] jacques-francois-regular text-[14px] md:text-[16px] lg:text-[17px]">
-            (Shaadi)
+            Shaadi
           </h2>
           <p className="text-[#775A19] jacques-francois-regular text-[18px] md:text-[17px] lg:text-xl mt-1">
             2nd Feb 2027
@@ -270,7 +270,7 @@ export default function LadkiEvents() {
                   The Haveli Verandah
                 </p>
               </div>
-              <p className="font-cormorant-garamond text-[#805719] text-[14px] tracking-[3px]">
+              <p className="jacques-francois-regular text-[#805719] text-[14px]">
                 8:00 AM
               </p>
             </div>
@@ -284,7 +284,7 @@ export default function LadkiEvents() {
                   Deck
                 </p>
               </div>
-              <p className="font-cormorant-garamond text-[#805719] text-[14px] tracking-[3px]">
+              <p className="jacques-francois-regular text-[#805719] text-[14px]">
                 8:00 AM
               </p>
             </div>
@@ -298,7 +298,7 @@ export default function LadkiEvents() {
                   Maharani Bagh
                 </p>
               </div>
-              <p className="font-cormorant-garamond text-[#805719] text-[14px] tracking-[3px]">
+              <p className="jacques-francois-regular text-[#805719] text-[14px]">
                 12:00 PM
               </p>
             </div>
@@ -312,7 +312,7 @@ export default function LadkiEvents() {
                   Baori
                 </p>
               </div>
-              <p className="font-cormorant-garamond text-[#805719] text-[14px] tracking-[3px]">
+              <p className="jacques-francois-regular text-[#805719] text-[14px]">
                 3:00 PM
               </p>
             </div>
@@ -348,7 +348,7 @@ export default function LadkiEvents() {
             The Final Bet
           </h2>
           <h2 className="text-[#775A19] jacques-francois-regular text-[14px] md:text-[16px] lg:text-[17px]">
-            (After Party)
+            After Party
           </h2>
           <p className="text-[#775A19] jacques-francois-regular text-[18px] md:text-[17px] lg:text-xl mt-1">
             2nd Feb 2027
@@ -402,9 +402,9 @@ export default function LadkiEvents() {
           <h2 className="text-[#775A19] jacques-francois-regular text-[26px] md:text-[25px] lg:text-[30px] mt-2">
             Vidaai
           </h2>
-          <p className="text-[#775A19] jacques-francois-regular text-[15px] md:text-[14px] lg:text-[15px] mt-1">
+          {/* <p className="text-[#775A19] jacques-francois-regular text-[15px] md:text-[14px] lg:text-[15px] mt-1">
             Breakfast
-          </p>
+          </p> */}
 
           <p className="text-[#775A19] jacques-francois-regular text-[18px] md:text-[17px] lg:text-xl ">
             3rd Feb 2027

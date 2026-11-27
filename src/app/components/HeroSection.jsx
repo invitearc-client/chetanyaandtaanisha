@@ -23,10 +23,10 @@ export default function HeroSection({ onSideChange }) {
       <div
         className=" absolute inset-0 z-0 w-full
     bg-[#faf4e8]
-    bg-[url('/assets/stock_mobile_bg3_n.jpg')]
+    bg-[url('/assets/stock_mobile_bg3_n.png')]
     lg:bg-[url('/assets/stock_bg2.webp')]
     bg-top bg-no-repeat
-    bg-[length:170%_auto]
+    bg-[length:150%_auto]
     lg:bg-[length:100%_auto]"
       />
       <div className="pointer-events-none fixed inset-0 z-20 h-screen w-screen">
@@ -56,7 +56,7 @@ export default function HeroSection({ onSideChange }) {
         </div>
 
         {/* ================= BUTTONS ================= */}
-        <div className="mt-80 flex w-full max-w-[500px]  items-center justify-center  md:gap-4 flex-row md:mt-160 lg:mt-180 3xl:mt-250">
+        <div className="mt-85 flex w-full max-w-[500px]  items-center justify-center  md:gap-4 flex-row md:mt-160 lg:mt-180 3xl:mt-250">
           {/* LADKE */}
           <button
             type="button"
