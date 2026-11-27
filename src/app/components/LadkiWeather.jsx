@@ -34,7 +34,7 @@ export default function LadkiWeather() {
             //   weather: "12°",
             //   icon: "/assets/sun2.webp",
             // },
-          
+
             {
               day: "Monday",
               date: "01",
@@ -60,7 +60,6 @@ export default function LadkiWeather() {
               icon: "/assets/sun2.webp",
             },
           ].map((item, index) => (
-         
             <div
               key={index}
               className="flex flex-col items-center justify-center text-[#775A19] w-[calc(30%-1rem)] md:w-[calc(20%-1.5rem)]"
@@ -69,7 +68,9 @@ export default function LadkiWeather() {
                 {item.day}
               </p>
 
-              <h3 className="font-cormorant-garamond text-[30px] md:text-3xl lg:text-4xl mt-1">{item.date}</h3>
+              <h3 className="font-cormorant-garamond text-[30px] md:text-3xl lg:text-4xl mt-1">
+                {item.date}
+              </h3>
 
               <p className="text-[9px]  md:text-[14px] tracking-[2px]">
                 {item.month}
@@ -80,67 +81,56 @@ export default function LadkiWeather() {
                 {item.temp}
               </h3>
 
-              <p className="text-[#ad945e] text-xl md:text-2xl  mt-1">{item.weather}</p>
+              <p className="text-[#ad945e] text-xl md:text-2xl  mt-1">
+                {item.weather}
+              </p>
             </div>
           ))}
         </div>
 
         {/* Bottom Invitation Text */}
         <div className="mt-24 md:mt-28 max-w-4xl mx-auto text-[#775A19]">
-          <p className="jacques-francois-regular text-sm md:text-base leading-relaxed">
+          {/* <p className="jacques-francois-regular text-sm md:text-base leading-relaxed">
             As we begin this beautiful new chapter together, it would mean the
             world to have you by our side. Your presence, love and blessings
             will make these moments even more special.
+          </p> */}
+          <p className="jacques-francois-regular text-sm md:text-base leading-relaxed">
+            My sister is getting married, <br />
+            the celebrations are about to begin,
+            <br />
+            and no celebration is complete without you.
+          </p>
+          <p className="jacques-francois-regular text-sm md:text-base leading-relaxed mt-3">
+            Come for the love, <br />
+            stay for the laughter,
+            <br />
+            and dance with me
+            <br />
+            as she begins her happily ever after!
           </p>
 
+          <p className="jacques-francois-regular text-sm md:text-base leading-relaxed mt-3">
+            -Dhanvi Gupta
+          </p>
+          {/* 
           <p className="jacques-francois-regular text-sm md:text-base leading-relaxed mt-3">
             We look forward to celebrating together, creating memories and
             sharing the joy of this occasion with all those who mean so much to
             us.
-          </p>
+          </p> */}
 
           <div className="text-2xl mt-3">♥</div>
 
           <p className="jacques-francois-regular text-sm md:text-2xl mt-3">
             With love,
           </p>
-   <h2 className="parisienne-regular  text-xl md:text-2xl mt-4 font-semibold">
-       ॐ साईं राम
+          <h2 className="parisienne-regular  text-xl md:text-2xl mt-4 font-semibold">
+            ॐ साईं राम
           </h2>
           <h2 className="parisienne-regular  text-2xl md:text-5xl mt-2 font-semibold">
-           The Aggarwals, Guptas & Malhotras
+            Guptas, Aggarwals and Malhotras
           </h2>
-
-          <div className="flex flex-col justify-center items-center mt-8">
-          <a
-            href="https://invitearc.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className=" flex items-center"
-          >
-            {" "}
-            <img
-              src="/assets/logon.png"
-              alt="Wedding Logo"
-              className="md:w-17 w-13"
-            />
-          </a>
-
-          <a
-            href="https://www.instagram.com/theinvitearc/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className=" flex items-center gap-3 font-serif text-[16px] md:text-[18px] text-[#775A19] mt-2"
-          >
-            <img
-              src="/assets/insta.png"
-              alt="Instagram"
-              className="object-contain h-4 w-5"
-            />
-
-            <span>Follow us on Instagram</span>
-          </a>
-        </div>
         </div>
       </div>
     </section>

@@ -21,27 +21,26 @@ export default function HeroSection({ onSideChange }) {
     >
       {/* BACKGROUND */}
       <div
-        className="
-    absolute inset-0 z-0 w-full
+        className=" absolute inset-0 z-0 w-full
     bg-[#faf4e8]
-    bg-[url('/assets/stock_mobile_bg3.webp')]
+    bg-[url('/assets/stock_mobile_bg3_n.jpg')]
     lg:bg-[url('/assets/stock_bg2.webp')]
     bg-top bg-no-repeat
-    bg-[length:100%_auto]
-  "
+    bg-[length:170%_auto]
+    lg:bg-[length:100%_auto]"
       />
       <div className="pointer-events-none fixed inset-0 z-20 h-screen w-screen">
         <RoseHeroTemp />
       </div>
       {/* ================= CONTENT ================= */}
 
-      <div className="relative z-10 flex w-full flex-1 flex-col items-center  pt-10  sm:px-8 md:px-2 lg:px-6">
+      <div className="relative z-10 flex w-full flex-1 flex-col items-center  pt-6 md:pt-10  sm:px-8 md:px-2 lg:px-6">
         {/* ================= GANESH ================= */}
-        <div className="mt-4 flex justify-center md:mt-4 lg:mt-8">
+        <div className=" flex justify-center md:mt-4 lg:mt-8">
           <img
             src="/assets/ganesh.png"
             alt="Shree Ganesh"
-            className="w-[65px] sm:w-[65px] md:w-[90px] lg:w-[150px]"
+            className="w-[80px] sm:w-[65px] md:w-[90px] lg:w-[150px]"
           />
         </div>
         {/* <p className="text-[17px] md:text-2xl text-[#000] font-cormorant-garamond">
@@ -52,7 +51,7 @@ export default function HeroSection({ onSideChange }) {
           <img
             src="/assets/logo.png"
             alt="Wedding Logo"
-            className="w-[110px]  md:w-[180px] lg:w-[280px]"
+            className="w-[150px]  md:w-[180px] lg:w-[280px]"
           />
         </div>
 
@@ -81,8 +80,8 @@ export default function HeroSection({ onSideChange }) {
               className="w-5 shrink-0"
             />
 
-            <span className="flex-1 text-center font-cormorant-garamond font-semibold tracking-wide pl-1">
-              LADKE WAALE
+            <span className="flex-1 text-center font-cormorant-garamond font-semibold tracking-wide pl-1 uppercase">
+              Groom Side
             </span>
 
             {/* Right Arrow */}
@@ -119,8 +118,8 @@ export default function HeroSection({ onSideChange }) {
               alt="Mata Image"
               className="w-5 shrink-0"
             />
-            <span className="flex-1 text-center font-cormorant-garamond font-semibold tracking-wide pl-1">
-              LADKI WAALE
+            <span className="flex-1 text-center font-cormorant-garamond font-semibold tracking-wide pl-1 uppercase">
+              Bride Side
             </span>
 
             <svg

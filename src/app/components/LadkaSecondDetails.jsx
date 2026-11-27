@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import ScratchText from "../components/ScratchText";
+import ScratchText from "../components/ScratchText"; 
 import MarriageCountdown from "../components/MarriageCountdown";
 import Wardrobe from "../components/Wardrobe";
 import Weather from "../components/Weather";
@@ -54,6 +54,38 @@ export default function LadkaSecondDetails() {
         alt="Mata Image"
         className="relative left-1/2 block w-screen max-w-none -translate-x-1/2"
       />
+
+
+      <div className="flex flex-col justify-center items-center mt-6 mb-14">
+          <a
+            href="https://invitearc.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className=" flex items-center"
+          >
+            {" "}
+            <img
+              src="/assets/logon.png"
+              alt="Wedding Logo"
+              className="md:w-17 w-13"
+            />
+          </a>
+
+          <a
+            href="https://www.instagram.com/theinvitearc/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className=" flex items-center gap-3 font-serif text-[16px] md:text-[18px] text-[#775A19] mt-2"
+          >
+            <img
+              src="/assets/insta.png"
+              alt="Instagram"
+              className="object-contain h-4 w-5"
+            />
+
+            <span>Follow us on Instagram</span>
+          </a>
+        </div>
     </div>
   );
 }

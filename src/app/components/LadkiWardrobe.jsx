@@ -84,6 +84,30 @@ export default function LadkiWardrobe() {
               className="w-full h-full object-contain
                 transition-transform duration-500 group-hover:scale-[1.02] "
             />
+
+            <div
+              className="absolute inset-0 flex flex-col items-center justify-center
+   opacity-100 transition-all duration-300
+  "
+            >
+              <span
+                className="text-white text-sm md:text-base tracking-[3px]
+    font-medium border border-white/70 px-5 py-2 backdrop-blur-sm"
+              >
+                CLICK TO OPEN
+              </span>
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="white"
+                strokeWidth="1.5"
+                className="w-6 h-6 mt-3 animate-bounce"
+              >
+                <path d="M12 5v14M5 12l7 7 7-7" />
+              </svg>
+            </div>
+
             <div
               className="absolute inset-0 flex items-center justify-center
                 bg-black/10 opacity-0  transition-opacity"
@@ -168,6 +192,12 @@ export default function LadkiWardrobe() {
                 <path d="m9 18 6-6-6-6" />
               </svg>
             </button>
+
+            <div className="absolute bottom-1 left-0 right-0 flex justify-center lg:hidden pointer-events-none">
+              <span className="text-[#775A19] text-xs tracking-[3px] font-medium animate-pulse">
+                ← SWIPE TO EXPLORE →
+              </span>
+            </div>
           </div>
         )}
       </div>

@@ -113,7 +113,7 @@ export default function Events() {
         </div> */}
 
         {/* Haldi Hungama Gharoli */}
-        <div className="relative w-full min-h-119 md:min-h-119 lg:min-h-129 flex flex-col bg-[url('/assets/event_bg.webp')] rounded-2xl px-5  md:px-8 bg-no-repeat bg-center bg-[length:100%_100%] justify-center items-center text-center">
+        <div className="relative w-full min-h-130 md:min-h-130 lg:min-h-129 flex flex-col bg-[url('/assets/event_bg.webp')] rounded-2xl px-5  md:px-8 bg-no-repeat bg-center bg-[length:100%_100%] justify-center items-center text-center">
           <img
             src="/assets/haldi_img.png"
             alt="Mata Image"
@@ -121,7 +121,7 @@ export default function Events() {
           />
 
           <h2 className="text-[#775A19] jacques-francois-regular text-[26px] md:text-[25px] lg:text-[30px] mt-2">
-            Haldi Hungama <br />
+            Haldi Hungama <br /> &
             Gharoli
           </h2>
 
@@ -130,7 +130,7 @@ export default function Events() {
           </p>
 
           <p className="text-[#775A19] jacques-francois-regular text-[15px] md:text-[14px] lg:text-[15px]">
-            11:00 AM to 2:30 PM
+            11:00 AM
           </p>
 
           <img
@@ -139,11 +139,9 @@ export default function Events() {
             className="w-[140px] md:w-[180px] py-3 shrink-0"
           />
 
-          {/* <p className="text-[#775A19] jacques-francois-regular text-sm md:text-sm lg:text-base px-4 md:px-0 leading-5 max-w-[650px]">
-            Join us for an afternoon of prayers, bhajan & dance, as we seek
-            divine blessings of MataRani to commence the Wedding Celebration of
-            Chetanya & Taanisha
-          </p> */}
+         <p className="text-[#775A19] jacques-francois-regular text-sm md:text-sm lg:text-base px-4 md:px-0 leading-5 max-w-[650px]">
+            Let’s paint the day with haldi, happiness, and beautiful memories.
+          </p>
 
           <div className="w-[200px] border-b border-[#E8D1AF] my-3" />
 
@@ -170,7 +168,7 @@ export default function Events() {
         </div>
 
         {/* Jashn e Sagan */}
-        <div className="relative w-full min-h-119 md:min-h-119 lg:min-h-129 flex flex-col bg-[url('/assets/event_bg.webp')] rounded-2xl px-5  md:px-8 bg-no-repeat bg-center bg-[length:100%_100%] justify-center items-center text-center">
+        <div className="relative w-full min-h-130 md:min-h-119 lg:min-h-129 flex flex-col bg-[url('/assets/event_bg.webp')] rounded-2xl px-5  md:px-8 bg-no-repeat bg-center bg-[length:100%_100%] justify-center items-center text-center">
           <img
             src="/assets/jasn.png"
             alt="Mata Image"
@@ -180,7 +178,9 @@ export default function Events() {
           <h2 className="text-[#775A19] jacques-francois-regular text-[26px] md:text-[25px] lg:text-[30px] mt-2">
             Jashn e Sagan
           </h2>
-
+ <h2 className="text-[#775A19] jacques-francois-regular text-[14px] md:text-[16px] lg:text-[17px]">
+            (Sagan and Cocktail)
+          </h2>
           <p className="text-[#775A19] jacques-francois-regular text-[18px] md:text-[17px] lg:text-xl mt-1">
             1st Feb 2027
           </p>
@@ -195,7 +195,9 @@ export default function Events() {
             className="w-[140px] md:w-[180px] py-3 shrink-0"
           />
 
-     
+     <p className="text-[#775A19] jacques-francois-regular text-sm md:text-sm lg:text-base px-4 md:px-0 leading-5 max-w-[650px]">
+          Come celebrate our Sagan as we kick off the wedding festivities in style!
+          </p>
 
           <div className="w-[200px] border-b border-[#E8D1AF] my-3" />
 
@@ -225,17 +227,19 @@ export default function Events() {
 
         {/* Din Shagna Da */}
 
-        <div className="relative w-full min-h-140 md:min-h-150 lg:min-h-145 3xl:min-h-145  flex flex-col bg-[url('/assets/event_bg.webp')] rounded-2xl px-5  md:px-8 bg-no-repeat bg-center bg-[length:100%_100%] justify-center items-center text-center">
+        <div className="relative w-full min-h-175 md:min-h-190 lg:min-h-190 3xl:min-h-145  flex flex-col bg-[url('/assets/event_bg.webp')] rounded-2xl px-5  md:px-8 bg-no-repeat bg-center bg-[length:100%_100%] justify-center items-center text-center">
           <img
             src="/assets/din.png"
             alt="Mata Image"
-            className="w-[60px] shrink-0 mt-10"
+            className="w-[60px] shrink-0 mt-15"
           />
 
           <h2 className="text-[#775A19] jacques-francois-regular text-[26px] md:text-[25px] lg:text-[25px] mt-2">
             Din Shagna Da
           </h2>
-
+ <h2 className="text-[#775A19] jacques-francois-regular text-[14px] md:text-[16px] lg:text-[17px]">
+            (Shaadi)
+          </h2>
           <p className="text-[#775A19] jacques-francois-regular text-[18px] md:text-[17px] lg:text-xl mt-1">
             2nd Feb 2027
           </p>
@@ -245,7 +249,9 @@ export default function Events() {
             alt="Decorative Element"
             className="w-[140px] md:w-[180px] py-3 shrink-0"
           />
-
+ <p className="text-[#775A19] jacques-francois-regular text-sm md:text-sm lg:text-base px-4 md:px-0 mb-4 leading-5 max-w-[650px]">
+         The day we've been waiting for! Come celebrate as we exchange our vows, honour traditions, and begin our forever.
+          </p>
           <div className="w-full flex flex-col gap-2 px-11">
             <div className="flex justify-between items-center bg-[#FFF0D9] border border-[#E8C99E] rounded-md px-3 py-1.5">
               <div className="flex flex-col items-start text-left">
@@ -327,7 +333,7 @@ export default function Events() {
         </div>
 
         {/* The Final Bet */}
-        <div className="relative w-full min-h-119 md:min-h-119 lg:min-h-129 flex flex-col bg-[url('/assets/event_bg.webp')] rounded-2xl px-5  md:px-8 bg-no-repeat bg-center bg-[length:100%_100%] justify-center items-center text-center">
+        <div className="relative w-full min-h-130 md:min-h-119 lg:min-h-129 flex flex-col bg-[url('/assets/event_bg.webp')] rounded-2xl px-5  md:px-8 bg-no-repeat bg-center bg-[length:100%_100%] justify-center items-center text-center">
           <img
             src="/assets/final.png"
             alt="Mata Image"
@@ -337,7 +343,9 @@ export default function Events() {
           <h2 className="text-[#775A19] jacques-francois-regular text-[26px] md:text-[25px] lg:text-[30px] mt-2">
             The Final Bet
           </h2>
-
+<h2 className="text-[#775A19] jacques-francois-regular text-[14px] md:text-[16px] lg:text-[17px]">
+            (After Party)
+          </h2>
           <p className="text-[#775A19] jacques-francois-regular text-[18px] md:text-[17px] lg:text-xl mt-1">
             2nd Feb 2027
           </p>
@@ -351,7 +359,9 @@ export default function Events() {
             alt="Decorative Element"
             className="w-[140px] md:w-[180px] py-3 shrink-0"
           />
-
+  <p className="text-[#775A19] jacques-francois-regular text-sm md:text-sm lg:text-base px-4 md:px-0 leading-5 max-w-[650px]">
+          Join us for the final chapter of our wedding celebrations. A night of high spirits, unexpected twists, and memories worth a fortune! 
+          </p>
           <div className="w-[200px] border-b border-[#E8D1AF] my-3" />
 
           <p className="text-[#775A19] jacques-francois-regular text-sm  md:text-[13px] lg:text-[15px] mt-2">
@@ -388,9 +398,9 @@ export default function Events() {
           <h2 className="text-[#775A19] jacques-francois-regular text-[26px] md:text-[25px] lg:text-[30px] mt-2">
             Vidaai
           </h2>
-          <p className="text-[#775A19] jacques-francois-regular text-[15px] md:text-[14px] lg:text-[15px] mt-1">
+          {/* <p className="text-[#775A19] jacques-francois-regular text-[15px] md:text-[14px] lg:text-[15px] mt-1">
             Breakfast
-          </p>
+          </p> */}
 
           <p className="text-[#775A19] jacques-francois-regular text-[18px] md:text-[17px] lg:text-xl ">
             3rd Feb 2027
@@ -405,7 +415,9 @@ export default function Events() {
             alt="Decorative Element"
             className="w-[140px] md:w-[180px] py-3 shrink-0"
           />
-
+  <p className="text-[#775A19] jacques-francois-regular text-sm md:text-sm lg:text-base px-4 md:px-0 leading-5 max-w-[650px]">
+        A moment of bittersweet goodbyes, heartfelt blessings, and new beginnings. 
+          </p>
           <div className="w-[200px] border-b border-[#E8D1AF] my-3" />
 
            <p className="text-[#775A19] jacques-francois-regular text-sm  md:text-[13px] lg:text-[15px] mt-2 uppercase">
